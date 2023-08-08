@@ -8,6 +8,6 @@
 - Magma
 - Semigroup
 - Monoid
-- Functor
+- [Functor](./Functor.md)
 - Applicative
 - Monad
