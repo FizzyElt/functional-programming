@@ -5,7 +5,7 @@
 - curry
 - Lazy Evolution
 - data first, data last
-- Magma
+- [Magma](./Magma.md)
 - Semigroup
 - Monoid
 - [Functor](./Functor.md)
