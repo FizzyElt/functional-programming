@@ -42,5 +42,5 @@ $$
 
 ### 參考連結
 
-[Magma wiki](https://en.wikipedia.org/wiki/Magma_(algebra))
-[nLab Magma](https://ncatlab.org/nlab/show/magma)
+- [Magma wiki](https://en.wikipedia.org/wiki/Magma_(algebra))
+- [nLab Magma](https://ncatlab.org/nlab/show/magma)
