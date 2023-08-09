@@ -9,6 +9,7 @@ $$
 ## 加法
 
 我們可以定義一個正整數加法 $(\mathbb{N},\ +)$
+
 $$
 a,\ b \in \mathbb{N} \Longrightarrow a\ +\ b \in \mathbb{N}
 $$
