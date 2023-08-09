@@ -2,21 +2,23 @@
 
 代數結構的一種，由一個集合與運算子組成 $(M,\ \bullet)$
 定義為「對於在集合 $M$ 裡所有 $a,\ b$，$a\ \bullet \ b$ 的結果也是集合 $M$ 裡的元素」
-$$a,\ b \in M \Longrightarrow a\ \bullet\ b \in M$$
+$$
+a,\ b \in M \Longrightarrow a\ \bullet\ b \in M
+$$
 
 ## 加法
 
-我們可以定義一個正整數加法 $(\N,\ +)$
+我們可以定義一個正整數加法 $(\mathbb{N},\ +)$
 $$
-a,\ b \in \N \Longrightarrow a\ +\ b \in \N
+a,\ b \in \mathbb{N} \Longrightarrow a\ +\ b \in \mathbb{N}
 $$
 
 ## 乘法
 
-正整數乘法 $(\N,\ \times)$
+正整數乘法 $(\mathbb{N},\ \times)$
 
 $$
-a,\ b \in \N \Longrightarrow a\ \times\ b \in \N
+a,\ b \in \mathbb{N} \Longrightarrow a\ \times\ b \in \mathbb{N}
 $$
 
 ## 字串的連接
