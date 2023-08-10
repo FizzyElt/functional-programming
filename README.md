@@ -3,7 +3,7 @@
 - pure function
 - immutable
 - curry
-- Lazy Evolution
+- Lazy Evaluation
 - data first, data last
 - [Magma](./Magma.md)
 - Semigroup
