@@ -1,7 +1,8 @@
 # Magma
 
 代數結構的一種，由一個集合與運算子組成 $(M,\ \bullet)$
-定義為「對於在集合 $M$ 裡所有 $a,\ b$，$a\ \bullet \ b$ 的結果也是集合 $M$ 裡的元素」
+定義為「對於在集合 $M$ 裡所有 $a,\ b$， $a\ \bullet \ b$ 的結果也是集合 $M$ 裡的元素」
+
 $$
 a,\ b \in M \Longrightarrow a\ \bullet\ b \in M
 $$
