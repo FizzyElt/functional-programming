@@ -6,7 +6,7 @@
 - Lazy Evaluation
 - data first, data last
 - [Magma](./Magma.md)
-- Semigroup
+- [Semigroup](./Semigroup.md)
 - Monoid
 - [Functor](./Functor.md)
 - Applicative
