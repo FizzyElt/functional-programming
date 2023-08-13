@@ -1,6 +1,6 @@
 # Monoid
 
-基於 [Semigroup](./Monoid.md) 上，從集合中找出一個 identity element (這裡記作 $e$) 並且與其他元素滿足一下條件：
+基於 [Semigroup](./Semigroup.md) 上，從集合中找出一個 identity element (這裡記作 $e$) 並且與其他元素滿足一下條件：
 
 ### Left identity
 
@@ -14,11 +14,10 @@ $$
 a\ \circ\ e = a
 $$
 
-所以一個 Monoid $(S,\ \circ,\ e)$ 會有以下三個規則
+所以一個 Monoid $(S,\ \circ,\ e)$ 會有以下兩個規則
 
-1. $\circ : S\times S \to S$
-2. $(a\ \circ\ b)\ \circ\ c = a\ \circ\ (b\ \circ\ c)$
-3. $e\ \circ\ a = a = a\ \circ\ e$
+1. $(a\ \circ\ b)\ \circ\ c = a\ \circ\ (b\ \circ\ c)$
+2. $e\ \circ\ a = a = a\ \circ\ e$
 
 Monoid 恰好是只有一個物件的 [locally small category](./intuitive_category_theory.md)，identity morphism 對應 $e$，而組合兩個 morphism 正好得到另一個 morphism
 
