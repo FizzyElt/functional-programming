@@ -14,7 +14,7 @@ $$
 a\ \circ\ e = a
 $$
 
-所以一個 Monoid $(S,\ \circ,\ e)$ 會有以下兩個規則
+所以一個 Monoid $(S,\ \circ,\ e)$ 會有以下兩個等式規則
 
 1. $(a\ \circ\ b)\ \circ\ c = a\ \circ\ (b\ \circ\ c)$
 2. $e\ \circ\ a = a = a\ \circ\ e$
