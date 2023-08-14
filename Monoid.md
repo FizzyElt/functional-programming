@@ -59,7 +59,25 @@ $$
 const id = (v) => v 
 ```
 
+### 半自動機
+
+一個半自動機是個三元組 $(Q,\ \Sigma,\ T)$
+
+- $Q$ 是一個非空的「狀態集合」
+- $\Sigma$ 是一個「輸入字母表」的非空集合
+- $T$ 是轉移函數
+
+假設一個 $M(Q,\ \Sigma,\ T)$ 集合
+
+$$
+M(Q,\ \Sigma,\ T) = \{ T_w\ |\ w\in \Sigma^* \}
+$$
+
+集合 $M(Q,\ \Sigma,\ T)$ 在**函數複合**下閉合；就是說，對於所有 $v,w \in \Sigma^*$ ，有著 $T_w \circ T_v = T_{vw}$ 。它還包含 $T_\epsilon$ ，而這個 $T_\epsilon$ 是個**恆等函數(即 identity function)**。
+
 #### 參考連結
 
 - [Monoid wiki](https://en.wikipedia.org/wiki/Monoid)
 - [nLab Monoid](https://ncatlab.org/nlab/show/monoid)
+- [半自動機 wiki](https://zh.wikipedia.org/wiki/%E5%8D%8A%E8%87%AA%E5%8A%A8%E6%9C%BA)
+- [characteristic monoid](https://planetmath.org/CharacteristicMonoid)
