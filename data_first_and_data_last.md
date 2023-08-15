@@ -128,7 +128,7 @@ const fn = compose(map((num) => num + 1), map((num) => num * 2))
 ```javascript
 flow(
   // ...
-  concat(arr) //前一個的結果會被接在 arr 後面
+  concat(arr) // 前一個的結果會被接在 arr 後面
 )
 ```
 
@@ -148,7 +148,7 @@ flow(
 ```javascript
 flow(
   // ...
-  R.concat(R.__, arr) //保留地一個位置給後續進來的資料
+  R.concat(R.__, arr) // 保留第一個位置給後續進來的資料
 )
 ```
 
