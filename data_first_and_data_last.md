@@ -117,11 +117,11 @@ const fn = compose(map((num) => num + 1), map((num) => num * 2))
 
 - `lessThan`
 - `lessThanEqual`
-- `graterThan`
-- `graterThanEqual`
+- `greaterThan`
+- `greaterThanEqual`
 - `concat`
 
-如果是一般的比大小，我們反轉一下邏輯就可以解決(`lessThan` 改成 `graterThanEqual`)，但 `concat` 就不行
+如果是一般的比大小，我們反轉一下邏輯就可以解決(`lessThan` 改成 `greaterThanEqual`)，但 `concat` 就不行
 
 假設我們的需求是將主流程的資訊接在 `arr` 的前面，但一般作法似乎會有錯誤：
 
