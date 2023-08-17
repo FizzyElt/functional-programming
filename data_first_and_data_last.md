@@ -72,10 +72,10 @@ function map(callback){
 }
 ```
 
-現在我們做一個 double 函數只需要先傳 callback 即可
+現在做一個 double 函數只需要傳 callback 即可
 
 ```javascript
-const double = map((num) => num * 2)
+map((num) => num * 2)
 ```
 
 ## 利於函式組合
@@ -106,10 +106,44 @@ function fn(data){
 const fn = compose(map((num) => num + 1), map((num) => num * 2))
 ```
 
-那 data first 搭配柯里化有辦法嘛？
+## data first 較優雅的作法
 
-答案是：沒辦法，因為即便在柯里化的情況下第一個參數就被迫要給資料，並且這樣再做 `compose` 已經沒有太大意義了。
+如果不想像一開始那樣一直傳遞 data，但還是想走 data first 形式，有兩種
 
+### chaining
+
+一種是就是用我們一般 Array methods 的形式串接下去
+
+```javascript
+data.map((num) => num * 2).map((num) => num + 1)
+```
+
+可以從 [lodash](https://lodash.com/docs/#chain) 找到這種設計方式，但伴隨的缺點是跟其他函式庫沒辦法配合的這麼好。
+
+### 略過參數的語法糖
+
+在 Scala 中可以利用 `_` 來暫時略過參數：
+
+```scala
+List(1, 2, 3, 4).map(_ * 2)
+
+```
+
+```scala
+def multiplier(a: Int, b: Int): Int = a * b
+
+var fourTimes = multiplier(_, 4)
+
+fourTimes(2) // 8
+```
+
+我們在 `ramda` 中會看到一個叫做 [placeholder function](https://ramdajs.com/docs/#__) 來模擬類似 Scala 的效果，它可以保留位置來安插後續進來的參數。
+
+假設我們利用 data first 方式設計 `map` 並做柯里化，使用 `__` 函數就會是以下這樣：
+
+```javascript
+const fn = compose(map(R.__, (num) => num + 1), map(R.__, (num) => num * 2))
+```
 
 ## 參數的順序會影響結果的函數
 
@@ -132,6 +166,8 @@ flow(
 )
 ```
 
+### 重新包裝
+
 一種辦法是我們再包裝一個函數，重新將 data 擺在正確位置
 
 ```javascript
@@ -141,9 +177,22 @@ flow(
 )
 ```
 
+### flip
+
+flip 函數可以將你的函數的前兩個參數對調
+
+```javascript
+flow(
+  // ...
+  flip(concat)(arr) // 將參數對調
+)
+```
+
+[Ramda `flip`](https://ramdajs.com/docs/#flip)
+
 ### placeholder
 
-除了多包裝一層，我們在 `ramda` 中會看到一個叫做 [placeholder function](https://ramdajs.com/docs/#__)，它可以保留位置來安插後續進來的參數，這樣就可以消除不必要的包裝跟邏輯反轉。
+也可以利用 placeholder function 來消除不必要的包裝跟邏輯反轉。
 
 ```javascript
 flow(
@@ -151,4 +200,3 @@ flow(
   R.concat(R.__, arr) // 保留第一個位置給後續進來的資料
 )
 ```
-
