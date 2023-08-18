@@ -132,7 +132,7 @@ List(1, 2, 3, 4).map(_ * 2)
 ```scala
 def multiplier(a: Int, b: Int): Int = a * b
 
-var fourTimes = multiplier(_, 4)
+val fourTimes = multiplier(_: Int, 4)
 
 fourTimes(2) // 8
 ```
@@ -149,13 +149,13 @@ const fn = compose(map(R.__, (num) => num + 1), map(R.__, (num) => num * 2))
 
 有些函數的參數資料格式相同，並且擺放順序不同會影響執行結果。
 
-- `lessThan`
-- `lessThanEqual`
-- `greaterThan`
-- `greaterThanEqual`
+- `<`  lessThan
+- `<=` lessThanEqual
+- `>`  greaterThan
+- `>=` greaterThanEqual
 - `concat`
 
-如果是一般的比大小，我們反轉一下邏輯就可以解決(`lessThan` 改成 `greaterThanEqual`)，但 `concat` 就不行
+如果是一般的比大小，我們反轉一下邏輯就可以解決(`<` 改成 `>=`)，但 `concat` 就不行
 
 假設我們的需求是將主流程的資訊接在 `arr` 的前面，但一般作法似乎會有錯誤：
 
