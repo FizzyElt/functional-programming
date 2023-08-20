@@ -6,7 +6,7 @@
 - immutable
 - curry
 - Lazy Evaluation
-- data first, data last
+- [data first, data last](./data_first_and_data_last.md)
 - [Magma](./Magma.md)
 - [Semigroup](./Semigroup.md)
 - [Monoid](./Monoid.md)
