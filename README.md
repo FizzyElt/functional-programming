@@ -5,7 +5,7 @@
 - pure function
 - immutable
 - curry
-- Lazy Evaluation
+- Lazy semantic
 - [data first, data last](./data_first_and_data_last.md)
 - [Magma](./Magma.md)
 - [Semigroup](./Semigroup.md)
