@@ -2,17 +2,17 @@
 
 \p{在 Scala 中可以利用 \code{_} 來暫時略過參數：}
 
-\pre{
-  List(1, 2, 3, 4).map(_ * 2)
-}
+\pre{\startverb%
+List(1, 2, 3, 4).map(_ * 2)
+\stopverb}
 
-\pre{
+\pre{\startverb%
 def multiplier(a: Int, b: Int): Int = a * b
 
 val fourTimes = multiplier(_: Int, 4)
 
 fourTimes(2) // 8
-}
+\stopverb}
 
 \p{
   我們在 \code{ramda} 中會看到一個叫做 [placeholder function](https://ramdajs.com/docs/#__) 來模擬類似 Scala 的效果，它可以保留位置來安插後續進來的參數。
@@ -20,9 +20,9 @@ fourTimes(2) // 8
 假設我們利用 data first 方式設計 \code{map} 並做柯里化，使用 \code{__} 函數就會是以下這樣：
 }
 
-\pre{
-  const fn = compose(
+\pre{\startverb%
+const fn = compose(
   map(R.__, (num) => num + 1),
   map(R.__, (num) => num * 2)
 );
-}
+\stopverb}

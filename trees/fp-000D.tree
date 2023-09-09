@@ -2,11 +2,11 @@
 
 \p{flip 函數可以將你的函數的前兩個參數對調}
 
-\pre{
+\pre{\startverb%
 flow(
   // ...
   flip(concat)(arr) // 將參數對調
 );
-}
+\stopverb}
 
 [Ramda \code{flip}](https://ramdajs.com/docs/#flip)

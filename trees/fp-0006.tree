@@ -11,14 +11,14 @@
   而一般情況下組合會是長這樣：
 }
 
-\pre{
+\pre{\startverb%
 function fn(data) {
   return map(
     map(data, (num) => num * 2),
     (num) => num + 1
   );
 }
-}
+\stopverb}
 
 你每組一個新的函數出來你都得做一次傳遞資料的動作。
 

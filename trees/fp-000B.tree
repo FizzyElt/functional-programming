@@ -15,12 +15,12 @@
   假設我們的需求是將主流程的資訊接在 \code{arr} 的前面，但一般作法似乎會有錯誤：
 }
 
-\pre{
+\pre{\startverb%
 flow(
   // ...
   concat(arr) // 前一個的結果會被接在 arr 後面
 );
-}
+\stopverb}
 
 \transclude{fp-000C}
 \transclude{fp-000D}

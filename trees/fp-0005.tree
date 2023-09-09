@@ -4,7 +4,7 @@
 我們將 \code{map} 函數做柯里化
 }
 
-\pre{
+\pre{\startverb%
 function map(callback) {
   return function (data) {
     let res = [];
@@ -16,10 +16,10 @@ function map(callback) {
     return res;
   };
 }
-}
+\stopverb}
 
 現在做一個 double 函數只需要傳 callback 即可
 
-\pre{
-  map((num) => num * 2);
-}
+\pre{\startverb%
+map((num) => num * 2);
+\stopverb}
