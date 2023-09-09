@@ -1,0 +1,9 @@
+\title{chaining}
+
+\p{一種是就是用我們一般 Array methods 的形式串接下去}
+
+\pre{
+  data.map((num) => num * 2).map((num) => num + 1);
+}
+
+\p{可以從 [lodash](https://lodash.com/docs/#chain) 找到這種設計方式，但伴隨的缺點是跟其他函式庫沒辦法配合的這麼好。}

@@ -1,0 +1,6 @@
+\title{data first 較優雅的作法}
+
+\p{如果不想像一開始那樣一直傳遞 data，但還是想走 data first 形式，有兩種}
+
+\transclude{fp-0009}
+\transclude{fp-000A}

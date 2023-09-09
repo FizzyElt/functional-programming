@@ -1,0 +1,10 @@
+\title{placeholder}
+
+\p{也可以利用 placeholder function 來消除不必要的包裝跟邏輯反轉。}
+
+\pre{
+flow(
+  // ...
+  R.concat(R.__, arr) // 保留第一個位置給後續進來的資料
+);
+}

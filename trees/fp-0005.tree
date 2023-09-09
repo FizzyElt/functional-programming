@@ -1,0 +1,25 @@
+\title{data last 搭配柯里化}
+
+\p{
+我們將 \code{map} 函數做柯里化
+}
+
+\pre{
+function map(callback) {
+  return function (data) {
+    let res = [];
+
+    for (const item of data) {
+      res.push(callback(item));
+    }
+
+    return res;
+  };
+}
+}
+
+現在做一個 double 函數只需要傳 callback 即可
+
+\pre{
+  map((num) => num * 2);
+}

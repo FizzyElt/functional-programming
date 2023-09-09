@@ -1,0 +1,27 @@
+\title{一般函數的設計}
+
+\p{
+  在一般情況下我們撰寫一個函數習慣將資料擺在最前面，其他參數擺後面。假設今天我們設計一個 Array \code{map} 函數：
+}
+
+\pre{
+  function map(data, callback){
+    let res = [];
+
+    for(const item of data){
+        res.push(callback(item))
+    }
+
+    return res
+  }
+}
+
+\p{我們可以利用 \code{map} 它再做出新的函數 \code{double}：}
+
+\pre{
+  function double(data) {
+    return map(data, (num) => num * 2);
+  }
+}
+
+\p{但你慢慢就會發現你每利用 \code{map} 做一個新的函數出來，你都要重複做一次傳遞 \code{data} 的動作。}

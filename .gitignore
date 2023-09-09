@@ -1,0 +1,5 @@
+build/
+latex/
+output/
+node_modules/
+assets/forester.js
