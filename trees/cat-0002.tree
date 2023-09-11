@@ -1,0 +1,27 @@
+\title{Functor}
+\taxon{definition}
+\date{2023-09-11}
+\author{dannypsnl}
+
+\def\cat1{#{\mathcal{C}}}
+\def\cat2{#{\mathcal{D}}}
+
+\p{
+  Let #{\cat1 \to \cat2} be [categories](cat-0001). To specify a \em{functor} #{F} from \cat1 to \cat2, denoted #{F : \cat1 \to \cat2}
+
+  \ol{
+    \li{for every object #{c \in Ob(\cat1)}, one specifies an object #{F(c) \in Ob(\cat2)};}
+    \li{for every morphism #{f : c_1 \to c_2} in \cat1, one specifies a morphism #{F(f) : F(c_1) \to F(c_2)} in \cat2.}
+  }
+
+  And they must satisfy two properties:
+
+  \ol{
+    \li{
+      for every object #{c \in Ob{\cat1}}, we have #{F(id_c) = id_{F(c)}};
+    }
+    \li{
+      for every three objects #{c_1, c_2, c_3 \in Ob(\cat1)} and two morphisms #{f \in \cat1(c_1, c_2)} and #{g \in \cat1(c_2, c_3)}, the equation #{F(f \circ g) = F(f) \circ F(g)} holds in \cat2.
+    }
+  }
+}
