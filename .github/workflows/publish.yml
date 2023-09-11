@@ -54,8 +54,6 @@ jobs:
       - name: Check `latex` version
         run: latex --version
 
-      - name: "build org files"
-        run: make build-org
       - name: "build forester"
         run: make release
 
