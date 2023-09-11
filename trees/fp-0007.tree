@@ -1,0 +1,10 @@
+\title{利用 compose}
+
+在函數 \b{data last 搭配柯里化} 的情況下用 \code{compose} 來組合函式會乾淨許多。
+
+\pre{\startverb%
+const fn = compose(
+  map((num) => num + 1),
+  map((num) => num * 2)
+);
+\stopverb}

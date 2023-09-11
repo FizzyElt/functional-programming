@@ -1,0 +1,13 @@
+\date{2023-09-09}
+\title{Data first or Data last?}
+\author{fizzyelt}
+
+\p{
+  data first 跟 data last 區別在於主要被操作的資料是擺在最前面或最後面，而 functional programming 習慣 data last 的方式設計函數，目的是提高函數的可組合性。
+}
+\transclude{fp-0003}
+\transclude{fp-0004}
+\transclude{fp-0005}
+\transclude{fp-0006}
+\transclude{fp-0008}
+\transclude{fp-000B}

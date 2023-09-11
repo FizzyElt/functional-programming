@@ -1,0 +1,27 @@
+\title{參數的順序會影響結果的函數}
+
+\p{有些函數的參數資料格式相同，並且擺放順序不同會影響執行結果。}
+
+\ul{
+  \li{\code{<} lessThan}
+  \li{\code{<=} lessThanEqual}
+  \li{\code{>} greaterThan}
+  \li{\code{>=} greaterThanEqual}
+  \li{\code{concat}}
+}
+
+\p{
+  如果是一般的比大小，我們反轉一下邏輯就可以解決(\code{<} 改成 \code{>=})，但 \code{concat} 就不行
+  假設我們的需求是將主流程的資訊接在 \code{arr} 的前面，但一般作法似乎會有錯誤：
+}
+
+\pre{\startverb%
+flow(
+  // ...
+  concat(arr) // 前一個的結果會被接在 arr 後面
+);
+\stopverb}
+
+\transclude{fp-000C}
+\transclude{fp-000D}
+\transclude{fp-000E}

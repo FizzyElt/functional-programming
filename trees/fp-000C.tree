@@ -1,0 +1,10 @@
+\title{重新包裝}
+
+\p{一種辦法是我們再包裝一個函數，重新將 data 擺在正確位置}
+
+\pre{\startverb%
+flow(
+  // ...
+  (data) => concat(data, arr) // 多包一層來擺放正確位置
+);
+\stopverb}

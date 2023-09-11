@@ -1,0 +1,25 @@
+\title{data last}
+
+\p{今天我們轉成 data last 形式來設計 \code{map}：}
+
+\pre{\startverb%
+function map(callback, data) {
+  let res = [];
+
+  for (const item of data) {
+    res.push(callback(item));
+  }
+
+  return res;
+}
+\stopverb}
+
+\p{我們再嘗試做一個 \code{double}：}
+
+\pre{\startverb%
+function double(data) {
+  return map((num) => num * 2, data);
+}
+\stopverb}
+
+\p{你會發現你還是要一直傳遞 \code{data} ，這到底有什麼差，但我們忘了一件事情是 FP 通常會將函數做\b{柯里化(curry)}。}

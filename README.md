@@ -13,3 +13,20 @@
 - [Functor](./Functor.md)
 - Applicative
 - Monad
+
+### Development
+
+- forester
+- https://en.wikipedia.org/wiki/MacTeX
+
+Build command
+
+```shell
+make build
+```
+
+Locally watch server
+
+```shell
+./server.sh
+```
