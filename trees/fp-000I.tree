@@ -1,0 +1,42 @@
+\title{常見的 Functor Type}
+\author{fizzyelt}
+
+\ul{
+  \li{
+    Maybe / Option
+    \ul{
+      \li{Haskell (Maybe)}
+      \li{Lean (Option)}
+      \li{Rust (Option)}
+    }
+  }
+  \li{
+    Either / Result / Except
+    \ul{
+      \li{Haskell (Either)}
+      \li{Result (Rust)}
+      \li{Lean (Except)}
+    }
+  }
+  \li{
+    IO
+    \ul{
+      \li{Haskell (IO)}
+      \li{Lean (IO)}
+    }
+  }
+
+  \li{
+    Reader
+    待補
+  }
+  \li{
+    Writer
+    待補
+  }
+  \li{
+    State
+    待補
+  }
+
+}

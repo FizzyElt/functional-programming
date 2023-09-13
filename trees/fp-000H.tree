@@ -1,0 +1,11 @@
+\title{Lean 中的定義}
+\author{fizzyelt}
+
+\pre{\startverb%
+class Functor (f : Type u → Type v) : Type (max (u+1) v) where
+  map : {α β : Type u} → (α → β) → f α → f β
+  mapConst : {α β : Type u} → α → f β → f α :=
+    Function.comp map (Function.const _)
+\stopverb}
+
+[Lean doc: Functor](https://leanprover-community.github.io/mathlib4_docs/Init/Prelude.html#Functor)
