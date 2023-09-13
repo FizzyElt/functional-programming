@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="forest.xsl"?>
+<tree expanded="true" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>119</anchor> <rss>cat-0001.rss.xml</rss> <taxon>Definition</taxon> <addr>cat-0001</addr>  <route>cat-0001.xml</route> <date><year>2023</year> <month>9</month> <day>9</day></date> <authors><author>dannypsnl</author> </authors> <title>直覺 Category</title> </frontmatter> <mainmatter><p>說直覺是因為我們這裡未有完善定義何謂 <link href="set-0001.xml" type="local" title="本性類與良性類">class</link> 跟 <link href="set-0001.xml" type="local" title="本性類與良性類">set</link>，但是作為入門或是簡要使用的定義「夠好」。
+我們說 <tex>\mathcal{C}</tex> 是一個範疇的意思是：
+<ol>  <li>    有 <tex>Ob( \mathcal{C} )</tex> 物件 <b>class</b>，表示範疇中的物件。作為方便的記號，當 <tex>a</tex> 為 <tex>\mathcal{C}</tex> 中一物件，我們記成 <tex>a  \in  Ob( \mathcal{C} )</tex>  </li>  <li>    當有 <tex>a, b  \in  Ob( \mathcal{C} )</tex>，而 <tex>f</tex> 為一 <tex>a</tex> 到 <tex>b</tex> 之態射(morphism) ，記為 <tex>f  \in   \mathcal{C} (a, b)</tex> 或是 <tex>f : a  \to  b</tex>。
+    態射可以組合，也就是說當有 <tex>f : a  \to  b</tex> 且 <tex>g : b  \to  c</tex>，存在一個兩個的組合態射 <tex>f  \circ  g</tex>。
+    與上面相同，<tex>\mathcal{C} (a, b)</tex> 是一個態射 <b>class</b>  </li>  <li>    <tex>id_a \  id_b</tex> 對 <tex>f:a \to  b</tex> 滿足 <tex>f \circ  id_a = f</tex> 跟 <tex>id_b \circ  f = f</tex>  </li>  <li>    <tex>(f \circ  g) \circ  h=f \circ  (g \circ  h)</tex>  </li></ol>  要是 <tex>\mathcal{C} (a, b)</tex> 剛好是集合，就說這是 locally small category，要是連 <tex>Ob( \mathcal{C} )</tex> 也只是集合，那就說這是 small category。
+  深入技術細節會讓你更了解為什麼需要定義這麼多東西，但在最開始的時候，只要簡單的相信範疇給定的定義即可。
+</p></mainmatter> <backmatter><contributions/> <context><tree expanded="false" show-heading="true" show-metadata="true" toc="false" root="true"><frontmatter> <anchor>120</anchor> <rss>index.rss.xml</rss>  <addr>fp-0001</addr>  <route>index.xml</route>  <authors> <contributor>dannypsnl</contributor><contributor>fizzyelt</contributor></authors> <title>帶你入門 functional programming</title> <meta name="author">false</meta></frontmatter> <mainmatter><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>1</crumb></trail> <anchor>121</anchor> <rss>fp-000F.rss.xml</rss>  <addr>fp-000F</addr>  <route>fp-000F.xml</route> <date><year>2023</year> <month>9</month> <day>11</day></date> <authors><author>fizzyelt</author> <contributor>dannypsnl</contributor></authors> <title>Functor</title> </frontmatter> <mainmatter><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>1</crumb> <crumb>1</crumb></trail> <anchor>122</anchor> <rss>cat-0002.rss.xml</rss> <taxon>Definition</taxon> <addr>cat-0002</addr>  <route>cat-0002.xml</route> <date><year>2023</year> <month>9</month> <day>11</day></date> <authors><author>dannypsnl</author> </authors> <title>Functor</title> </frontmatter> <mainmatter><p>  Let <tex>\mathcal{C}   \to   \mathcal{D}</tex> be <link href="cat-0001.xml" type="local" title="直覺 Category">categories</link>. To specify a <em>functor</em> <tex>F</tex> from <tex>\mathcal{C}</tex> to <tex>\mathcal{D}</tex>, denoted <tex>F :  \mathcal{C}   \to   \mathcal{D}</tex>  <ol>    <li>for every object <tex>c  \in  Ob( \mathcal{C} )</tex>, one specifies an object <tex>F(c)  \in  Ob( \mathcal{D} )</tex>;</li>    <li>for every morphism <tex>f : c_1  \to  c_2</tex> in <tex>\mathcal{C}</tex>, one specifies a morphism <tex>F(f) : F(c_1)  \to  F(c_2)</tex> in <tex>\mathcal{D}</tex>.</li>  </ol>  And they must satisfy two properties:
+  <ol>    <li>      for every object <tex>c  \in  Ob{ \mathcal{C} }</tex>, we have <tex>F(id_c) = id_{F(c)}</tex>;
+    </li>    <li>      for every three objects <tex>c_1, c_2, c_3  \in  Ob( \mathcal{C} )</tex> and two morphisms <tex>f  \in   \mathcal{C} (c_1, c_2)</tex> and <tex>g  \in   \mathcal{C} (c_2, c_3)</tex>, the equation <tex>F(f  \circ  g) = F(f)  \circ  F(g)</tex> holds in <tex>\mathcal{D}</tex>.
+    </li>  </ol></p></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>1</crumb> <crumb>2</crumb></trail> <anchor>123</anchor> <rss>fp-000G.rss.xml</rss>  <addr>fp-000G</addr>  <route>fp-000G.xml</route>  <authors><author>fizzyelt</author><author>dannypsnl</author> </authors> <title>實際上的用途</title> </frontmatter> <mainmatter><p>	可以將一個 pure function 應用到容器型別之中。
+	單純從容器的角度來看，就像是隱藏了「取出 → 運算 → 放回去」的過程，而根據每個容器用途不同在過程中執行不同操作及判斷。
+</p><center><img src="resources/96e989c77602087d8405ded90a554e2a-web.svg"/></center><p>	雖然 polymorphism 的容器解釋非常方便，卻是眾多誤解的根源之一。實際上不能做這麼簡單的解釋，舉例來說我可以定義 <tex>F(-) = (c  \to  -)</tex>，於是 <tex>F(a)  \to  F(b)</tex> 視同 <tex>(c  \to  a)  \to  (c  \to  b)</tex>，令 <tex>g : c  \to  a, f : a  \to  b</tex>，<tex>\lambda  c.  \lambda  g. f(g(c))</tex> 正是一個 functor。
+</p></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>1</crumb> <crumb>3</crumb></trail> <anchor>124</anchor> <rss>fp-000H.rss.xml</rss>  <addr>fp-000H</addr>  <route>fp-000H.xml</route>  <authors><author>fizzyelt</author> </authors> <title>Lean 中的定義</title> </frontmatter> <mainmatter><pre>class Functor (f : Type u → Type v) : Type (max (u+1) v) where
+  map : {α β : Type u} → (α → β) → f α → f β
+  mapConst : {α β : Type u} → α → f β → f α :=
+    Function.comp map (Function.const _)
+</pre><link href="https://leanprover-community.github.io/mathlib4_docs/Init/Prelude.html#Functor" type="external">Lean doc: Functor</link></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>1</crumb> <crumb>4</crumb></trail> <anchor>125</anchor> <rss>fp-000I.rss.xml</rss>  <addr>fp-000I</addr>  <route>fp-000I.xml</route>  <authors><author>fizzyelt</author> </authors> <title>常見的 Functor Type</title> </frontmatter> <mainmatter><ul>  <li>    Maybe / Option
+    <ul>      <li>Haskell (Maybe)</li>      <li>Lean (Option)</li>      <li>Rust (Option)</li>    </ul>  </li>  <li>    Either / Result / Except
+    <ul>      <li>Haskell (Either)</li>      <li>Result (Rust)</li>      <li>Lean (Except)</li>    </ul>  </li>  <li>    IO
+    <ul>      <li>Haskell (IO)</li>      <li>Lean (IO)</li>    </ul>  </li>  <li>    Reader
+    待補
+  </li>  <li>    Writer
+    待補
+  </li>  <li>    State
+    待補
+  </li></ul></mainmatter> </tree></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>2</crumb></trail> <anchor>126</anchor> <rss>fp-0002.rss.xml</rss>  <addr>fp-0002</addr>  <route>fp-0002.xml</route> <date><year>2023</year> <month>9</month> <day>9</day></date> <authors><author>fizzyelt</author> </authors> <title>Data first or Data last?</title> </frontmatter> <mainmatter><p>  data first 跟 data last 區別在於主要被操作的資料是擺在最前面或最後面，而 functional programming 習慣 data last 的方式設計函數，目的是提高函數的可組合性。
+</p><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>2</crumb> <crumb>1</crumb></trail> <anchor>127</anchor> <rss>fp-0003.rss.xml</rss>  <addr>fp-0003</addr>  <route>fp-0003.xml</route>   <title>一般函數的設計</title> </frontmatter> <mainmatter><p>  在一般情況下我們撰寫一個函數習慣將資料擺在最前面，其他參數擺後面。假設今天我們設計一個 Array <code>map</code> 函數：
+</p><pre>function map(data, callback){
+  let res = [];
+
+  for(const item of data){
+      res.push(callback(item))
+  }
+
+  return res
+}
+</pre><p>我們可以利用 <code>map</code> 它再做出新的函數 <code>double</code>：</p><pre>function double(data) {
+  return map(data, (num) =&gt; num * 2);
+}
+</pre><p>但你慢慢就會發現你每利用 <code>map</code> 做一個新的函數出來，你都要重複做一次傳遞 <code>data</code> 的動作。</p></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>2</crumb> <crumb>2</crumb></trail> <anchor>128</anchor> <rss>fp-0004.rss.xml</rss>  <addr>fp-0004</addr>  <route>fp-0004.xml</route>   <title>Data last</title> </frontmatter> <mainmatter><p>今天我們轉成 data last 形式來設計 <code>map</code>：</p><pre>function map(callback, data) {
+  let res = [];
+
+  for (const item of data) {
+    res.push(callback(item));
+  }
+
+  return res;
+}
+</pre><p>我們再嘗試做一個 <code>double</code>：</p><pre>function double(data) {
+  return map((num) =&gt; num * 2, data);
+}
+</pre><p>你會發現你還是要一直傳遞 <code>data</code> ，這到底有什麼差，但我們忘了一件事情是 FP 通常會將函數做<b>柯里化(curry)</b>。</p></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>2</crumb> <crumb>3</crumb></trail> <anchor>129</anchor> <rss>fp-0005.rss.xml</rss>  <addr>fp-0005</addr>  <route>fp-0005.xml</route>   <title>Data last 搭配柯里化</title> </frontmatter> <mainmatter><p>我們將 <code>map</code> 函數做柯里化
+</p><pre>function map(callback) {
+  return function (data) {
+    let res = [];
+
+    for (const item of data) {
+      res.push(callback(item));
+    }
+
+    return res;
+  };
+}
+</pre>現在做一個 double 函數只需要傳 callback 即可
+<pre>map((num) =&gt; num * 2);
+</pre></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>2</crumb> <crumb>4</crumb></trail> <anchor>130</anchor> <rss>fp-0006.rss.xml</rss>  <addr>fp-0006</addr>  <route>fp-0006.xml</route>   <title>利於函式組合</title> </frontmatter> <mainmatter><p>一般我們做函式組合通常是 <tex>f</tex> 函數的輸出對應到 <tex>g</tex> 函數的輸入。</p><tex display="block">  f = a  \to  b, \  g = b  \to  c
+</tex><p>  但現實是並不是每個函數的輸入參數都只有一個，我們必須先給一些參數後才能再跟其他函數接在一起。
+  而一般情況下組合會是長這樣：
+</p><pre>function fn(data) {
+  return map(
+    map(data, (num) =&gt; num * 2),
+    (num) =&gt; num + 1
+  );
+}
+</pre>你每組一個新的函數出來你都得做一次傳遞資料的動作。
+<tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>2</crumb> <crumb>4</crumb> <crumb>1</crumb></trail> <anchor>131</anchor> <rss>fp-0007.rss.xml</rss>  <addr>fp-0007</addr>  <route>fp-0007.xml</route>   <title>利用 compose</title> </frontmatter> <mainmatter>在函數 <b>data last 搭配柯里化</b> 的情況下用 <code>compose</code> 來組合函式會乾淨許多。
+<pre>const fn = compose(
+  map((num) =&gt; num + 1),
+  map((num) =&gt; num * 2)
+);
+</pre></mainmatter> </tree></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>2</crumb> <crumb>5</crumb></trail> <anchor>132</anchor> <rss>fp-0008.rss.xml</rss>  <addr>fp-0008</addr>  <route>fp-0008.xml</route>   <title>Data first 較優雅的作法</title> </frontmatter> <mainmatter><p>如果不想像一開始那樣一直傳遞 data，但還是想走 data first 形式，有兩種</p><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>2</crumb> <crumb>5</crumb> <crumb>1</crumb></trail> <anchor>133</anchor> <rss>fp-0009.rss.xml</rss>  <addr>fp-0009</addr>  <route>fp-0009.xml</route>   <title>Chaining</title> </frontmatter> <mainmatter><p>一種是就是用我們一般 Array methods 的形式串接下去</p><pre>data.map((num) =&gt; num * 2).map((num) =&gt; num + 1);
+</pre><p>可以從 <link href="https://lodash.com/docs/#chain" type="external">lodash</link> 找到這種設計方式，但伴隨的缺點是跟其他函式庫沒辦法配合的這麼好。</p></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>2</crumb> <crumb>5</crumb> <crumb>2</crumb></trail> <anchor>134</anchor> <rss>fp-000A.rss.xml</rss>  <addr>fp-000A</addr>  <route>fp-000A.xml</route>   <title>略過參數的語法糖</title> </frontmatter> <mainmatter><p>在 Scala 中可以利用 <code>_</code> 來暫時略過參數：</p><pre>List(1, 2, 3, 4).map(_ * 2)
+</pre><pre>def multiplier(a: Int, b: Int): Int = a * b
+
+val fourTimes = multiplier(_: Int, 4)
+
+fourTimes(2) // 8
+</pre><p>  我們在 <code>ramda</code> 中會看到一個叫做 <link href="https://ramdajs.com/docs/#__" type="external">placeholder function</link> 來模擬類似 Scala 的效果，它可以保留位置來安插後續進來的參數。
+假設我們利用 data first 方式設計 <code>map</code> 並做柯里化，使用 <code>__</code> 函數就會是以下這樣：
+</p><pre>const fn = compose(
+  map(R.__, (num) =&gt; num + 1),
+  map(R.__, (num) =&gt; num * 2)
+);
+</pre></mainmatter> </tree></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>2</crumb> <crumb>6</crumb></trail> <anchor>135</anchor> <rss>fp-000B.rss.xml</rss>  <addr>fp-000B</addr>  <route>fp-000B.xml</route>   <title>參數的順序會影響結果的函數</title> </frontmatter> <mainmatter><p>有些函數的參數資料格式相同，並且擺放順序不同會影響執行結果。</p><ul>  <li><code>&lt;</code> lessThan</li>  <li><code>&lt;=</code> lessThanEqual</li>  <li><code>&gt;</code> greaterThan</li>  <li><code>&gt;=</code> greaterThanEqual</li>  <li><code>concat</code></li></ul><p>  如果是一般的比大小，我們反轉一下邏輯就可以解決(<code>&lt;</code> 改成 <code>&gt;=</code>)，但 <code>concat</code> 就不行
+  假設我們的需求是將主流程的資訊接在 <code>arr</code> 的前面，但一般作法似乎會有錯誤：
+</p><pre>flow(
+  // ...
+  concat(arr) // 前一個的結果會被接在 arr 後面
+);
+</pre><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>2</crumb> <crumb>6</crumb> <crumb>1</crumb></trail> <anchor>136</anchor> <rss>fp-000C.rss.xml</rss>  <addr>fp-000C</addr>  <route>fp-000C.xml</route>   <title>重新包裝</title> </frontmatter> <mainmatter><p>一種辦法是我們再包裝一個函數，重新將 data 擺在正確位置</p><pre>flow(
+  // ...
+  (data) =&gt; concat(data, arr) // 多包一層來擺放正確位置
+);
+</pre></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>2</crumb> <crumb>6</crumb> <crumb>2</crumb></trail> <anchor>137</anchor> <rss>fp-000D.rss.xml</rss>  <addr>fp-000D</addr>  <route>fp-000D.xml</route>   <title>Flip</title> </frontmatter> <mainmatter><p>flip 函數可以將你的函數的前兩個參數對調</p><pre>flow(
+  // ...
+  flip(concat)(arr) // 將參數對調
+);
+</pre><link href="https://ramdajs.com/docs/#flip" type="external">Ramda <code>flip</code></link></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>2</crumb> <crumb>6</crumb> <crumb>3</crumb></trail> <anchor>138</anchor> <rss>fp-000E.rss.xml</rss>  <addr>fp-000E</addr>  <route>fp-000E.xml</route>   <title>Placeholder</title> </frontmatter> <mainmatter><p>也可以利用 placeholder function 來消除不必要的包裝跟邏輯反轉。</p><pre>flow(
+  // ...
+  R.concat(R.__, arr) // 保留第一個位置給後續進來的資料
+);
+</pre></mainmatter> </tree></mainmatter> </tree></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>3</crumb></trail> <anchor>139</anchor> <rss>cat-0001.rss.xml</rss> <taxon>Definition</taxon> <addr>cat-0001</addr>  <route>cat-0001.xml</route> <date><year>2023</year> <month>9</month> <day>9</day></date> <authors><author>dannypsnl</author> </authors> <title>直覺 Category</title> </frontmatter> <mainmatter><p>說直覺是因為我們這裡未有完善定義何謂 <link href="set-0001.xml" type="local" title="本性類與良性類">class</link> 跟 <link href="set-0001.xml" type="local" title="本性類與良性類">set</link>，但是作為入門或是簡要使用的定義「夠好」。
+我們說 <tex>\mathcal{C}</tex> 是一個範疇的意思是：
+<ol>  <li>    有 <tex>Ob( \mathcal{C} )</tex> 物件 <b>class</b>，表示範疇中的物件。作為方便的記號，當 <tex>a</tex> 為 <tex>\mathcal{C}</tex> 中一物件，我們記成 <tex>a  \in  Ob( \mathcal{C} )</tex>  </li>  <li>    當有 <tex>a, b  \in  Ob( \mathcal{C} )</tex>，而 <tex>f</tex> 為一 <tex>a</tex> 到 <tex>b</tex> 之態射(morphism) ，記為 <tex>f  \in   \mathcal{C} (a, b)</tex> 或是 <tex>f : a  \to  b</tex>。
+    態射可以組合，也就是說當有 <tex>f : a  \to  b</tex> 且 <tex>g : b  \to  c</tex>，存在一個兩個的組合態射 <tex>f  \circ  g</tex>。
+    與上面相同，<tex>\mathcal{C} (a, b)</tex> 是一個態射 <b>class</b>  </li>  <li>    <tex>id_a \  id_b</tex> 對 <tex>f:a \to  b</tex> 滿足 <tex>f \circ  id_a = f</tex> 跟 <tex>id_b \circ  f = f</tex>  </li>  <li>    <tex>(f \circ  g) \circ  h=f \circ  (g \circ  h)</tex>  </li></ol>  要是 <tex>\mathcal{C} (a, b)</tex> 剛好是集合，就說這是 locally small category，要是連 <tex>Ob( \mathcal{C} )</tex> 也只是集合，那就說這是 small category。
+  深入技術細節會讓你更了解為什麼需要定義這麼多東西，但在最開始的時候，只要簡單的相信範疇給定的定義即可。
+</p></mainmatter> </tree></mainmatter> </tree></context> <related><tree expanded="false" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>140</anchor> <rss>set-0001.rss.xml</rss>  <addr>set-0001</addr>  <route>set-0001.xml</route> <date><year>2023</year> <month>9</month> <day>9</day></date> <authors><author>dannypsnl</author> </authors> <title>本性類與良性類</title> </frontmatter> <mainmatter><p>  類區分為兩種：一種是可以順利進行類運算的「良性類」，我們把這種「良性類」稱為集合；另一種是要限制運算的「本性類」，對於本性類，類運算並不是都能進行的。
+  更多資料可以參照數學導論
+</p></mainmatter> </tree></related> <backlinks><tree expanded="false" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>141</anchor> <rss>cat-0002.rss.xml</rss> <taxon>Definition</taxon> <addr>cat-0002</addr>  <route>cat-0002.xml</route> <date><year>2023</year> <month>9</month> <day>11</day></date> <authors><author>dannypsnl</author> </authors> <title>Functor</title> </frontmatter> <mainmatter><p>  Let <tex>\mathcal{C}   \to   \mathcal{D}</tex> be <link href="cat-0001.xml" type="local" title="直覺 Category">categories</link>. To specify a <em>functor</em> <tex>F</tex> from <tex>\mathcal{C}</tex> to <tex>\mathcal{D}</tex>, denoted <tex>F :  \mathcal{C}   \to   \mathcal{D}</tex>  <ol>    <li>for every object <tex>c  \in  Ob( \mathcal{C} )</tex>, one specifies an object <tex>F(c)  \in  Ob( \mathcal{D} )</tex>;</li>    <li>for every morphism <tex>f : c_1  \to  c_2</tex> in <tex>\mathcal{C}</tex>, one specifies a morphism <tex>F(f) : F(c_1)  \to  F(c_2)</tex> in <tex>\mathcal{D}</tex>.</li>  </ol>  And they must satisfy two properties:
+  <ol>    <li>      for every object <tex>c  \in  Ob{ \mathcal{C} }</tex>, we have <tex>F(id_c) = id_{F(c)}</tex>;
+    </li>    <li>      for every three objects <tex>c_1, c_2, c_3  \in  Ob( \mathcal{C} )</tex> and two morphisms <tex>f  \in   \mathcal{C} (c_1, c_2)</tex> and <tex>g  \in   \mathcal{C} (c_2, c_3)</tex>, the equation <tex>F(f  \circ  g) = F(f)  \circ  F(g)</tex> holds in <tex>\mathcal{D}</tex>.
+    </li>  </ol></p></mainmatter> </tree></backlinks> <references/></backmatter></tree>
