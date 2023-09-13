@@ -1,0 +1,20 @@
+\title{半自動機}
+\taxon{example}
+\author{fizzyelt}
+\date{2023-09-13}
+
+對給定的半自動機可以討論其 [characteristic monoid](https://planetmath.org/CharacteristicMonoid)。一個半自動機是個三元組 #{(Q, \Sigma, T)}
+
+\ul{
+  \li{#{Q} 是一個非空的「狀態集合」}
+  \li{#{\Sigma} 是一個「輸入字母表」的非空集合}
+  \li{#{T} 是轉移函數}
+}
+
+假設一個 #{M(Q, \Sigma, T)} 集合
+
+##{
+  M(Q,\ \Sigma,\ T) = \{ T_w\ |\ w\in \Sigma^* \}
+}
+
+集合 #{M(Q,\ \Sigma,\ T)} 在\b{函數複合}下閉合；就是說，對於所有 #{v,w \in \Sigma^*} ，有 #{T_w \circ T_v = T_{vw}} 。它還包含 #{T_\epsilon} ，而這個 #{T_\epsilon} 是個\b{恆等函數(即 identity function)}。 
