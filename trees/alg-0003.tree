@@ -1,0 +1,12 @@
+\title{Semigroup}
+\taxon{definition}
+\date{2023-09-13}
+\author{fizzyelt}
+
+[Semigroup](https://ncatlab.org/nlab/show/semigroup) 是滿足結合律的 [Magma](alg-0001)。結合律是指對所有 semigroup 中的元素 #{x,y,z \in S}，皆滿足
+
+##{
+  x \bullet (y \bullet z) = (x \bullet y) \bullet z
+}
+
+\transclude{alg-0004}

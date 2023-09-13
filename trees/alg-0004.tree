@@ -1,0 +1,11 @@
+\title{不滿足交換律的 semigroup}
+\taxon{example}
+\author{dannypsnl}
+\date{2023-09-13}
+
+沿襲 [Magma 案例](alg-0002)的傳統，這裡不舉滿足交換律的 semigroup。在程式語言裡面已經有一個我們很常看到的案例了，也就是字串相接，我們可以著手檢查：
+
+\ul{
+  \li{字串與字串相接還是字串}
+  \li{字串先接 #{x, y} 或 #{y, z} 不影響結果}
+}
