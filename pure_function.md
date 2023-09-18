@@ -4,27 +4,27 @@
 
 ## 函數的定義
 
-一個 pure function 除了不能有副作用 (Side Effect) 之外，同時必須滿足在任何時間任何環境下同樣的輸入會得出相同的輸出，所以我們通常會以達到數學中函數定義為目標來設計函數。
+一個 pure function 除了不能有副作用 (Side Effect) 之外，同時必須滿足在任何時間任何環境下同樣的輸入會得出相同的輸出，所以我們通常會以達到數學中全函數(total function)定義為目標來設計函數。
 
-在數學中，函數是一個集合 (稱為**定義域 domain**) 到另一個集合 (稱為**值域 codomain**) 的映射，假設我們有個函數 $f : A \to B$ ，則 $A$ (domain) 中每個元素都必須對應到 $B$ (codomain) 中的一個元素，在這裡我們可以簡單的將集合慨念對應到程式的型別，建立一個函數就是在實做映射的細節。
+在數學中，函數是一個集合 (稱為**定義域 domain**) 到另一個集合 (稱為**值域 codomain**) 的映射，假設我們有個函數 $f : A \to B$ ，則 $A$ (domain) 中每個元素都必須對應到 $B$ (codomain) 中的一個元素，能達成 $A \to B$ 條件的函數總共有 $|B|^{|A|}$ 種，我們通常實現的都只會是其中幾種，而不是所有都實作。
 
 Typescript
 
 ```typescript
-// numberToString : number -> string
-function numberToString(num: number): string {
-    return num.toString();
+// isEven : number -> boolean
+function isEven(num: number): boolean {
+    return num % 2 === 0
 }
 ```
 
 Haskell
 
 ```haskell
-integerToString :: Int -> String
-integerToString num = show num
+is_even :: Int -> Bool
+is_even n = n `mod` 2 == 0
 ```
 
-集合元素的對應又分三種類型，包含 **單射 (injection)**、**滿射 (surjection)**、**對射 (bijection)**。
+函數分三種類型，包含 **單射 (injection)**、**滿射 (surjection)**、**對射 (bijection)**。
 
 ### 單射 (injection)
 
