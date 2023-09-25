@@ -1,0 +1,12 @@
+\title{滿射 (surjection)}
+
+\p{我們稱一個函數 #{f : A \to B} 是滿射，則對於 #{B} 中所有的元素，都存在至少一個 #{A} 元素與其對應，即}
+
+##{\forall b \in B,\ \exist a \in A,\ f(a) = b}
+
+\figure{
+  \img[src]{images/fp-000M/surjection.png}
+  \figcaption{surjection}
+}
+
+\p{我們可以從中得知另一個訊息是 #{A} 中的元素數量會大於等於 #{B} 元素數量，即 #{|A| \ge |B|}}
