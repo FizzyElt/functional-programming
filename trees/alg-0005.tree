@@ -11,5 +11,5 @@
 
 如果把 id morphism 對應到 #{e}，而剩餘的 morphism 對應到每個 monoid 的元素上，那麼只有一個 object 的 [small category](cat-0001) 正好是一個 monoid。
 
-\transclude{fp-000J}
+\transclude{fp-000O}
 \transclude{cs-0001}
