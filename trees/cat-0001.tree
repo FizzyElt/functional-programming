@@ -26,6 +26,6 @@
   }
 }
 
-  要是 #{\CCat(a, b)} 剛好是集合，就說這是 locally small category，要是連 #{Ob(\CCat)} 也只是集合，那就說這是 small category。
+  要是對每個 #{a,b} 之間全部的 morphism #{\CCat(a, b)} 是一個集合，就說範疇 locally small；要是整個範疇中所有的 morphism #{Ob(\CCat)} 是一個集合，那範疇就是 small。
   深入技術細節會讓你更了解為什麼需要定義這麼多東西，但在最開始的時候，只要簡單的相信範疇給定的定義即可。
 }
