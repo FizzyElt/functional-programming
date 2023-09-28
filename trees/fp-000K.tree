@@ -1,0 +1,23 @@
+\title{函數的定義}
+
+\p{一個 pure function 除了不能有副作用 (Side Effect) 之外，同時必須滿足在任何時間任何環境下同樣的輸入會得出相同的輸出，所以我們通常會以達到數學中全函數(total function)定義為目標來設計函數。}
+
+\p{在數學中，函數是一個集合 (稱為\b{定義域 domain}) 到另一個集合 (稱為\b{值域 codomain}) 的映射，假設我們有個函數 #{f:A \to B}，則 #{A} (domain) 中每個元素都必須對應到 #{B}(codomain) 中的一個元素，能達成 #{A \to B} 條件的函數總共有 #{|B|^{|A|}} 種，我們能實現的是有限的語法能實現的一小部分，而不是所有都實現。}
+
+\p{Typescript}
+
+\pre{\startverb%
+// isEven : number -> boolean
+function isEven(num: number): boolean {
+    return num % 2 === 0
+}
+\stopverb}
+
+\p{Haskell}
+
+\pre{\startverb%
+is_even :: Int -> Bool
+is_even n = mod n 2 == 0
+\stopverb}
+
+\p{函數分三種類型，包含 \b{單射 (injection)}、\b{滿射 (surjection)}、\b{對射 (bijection)}。}

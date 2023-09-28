@@ -1,34 +1,8 @@
-\title{函數組合}
-\taxon{example}
-\author{fizzyelt}
-\author{dannypsnl}
-\date{2023-09-13}
+\title{Pure function}
 
-在禁止 free variable 的 lambda calculus 中，可以將 monoid 用作模型
+\p{在程式中你可以利用 function 做許多事情，不只是單純的運算，還包含了各種值的修改及各種非同步操作，雖然方便但也造成了閱讀及維護上的困難。盡可能得撰寫 pure function 是一個可以有效減輕開發上的心智負擔，並且是使你能夠靈活組合函數的一個前提。}
 
-\ul{
-  \li{#{e} 就是 #{\lambda x. x}}
-  \li{函數 #{f, g} 的組合 #{f \circ g} 是 #{\lambda x. f (g \; x)}}
-}
-
-identity law 的檢查比較容易，這裡我們就來看結合律如何運作：
-
-##{\begin{aligned}
-  &f \circ (g \circ h)
-  \\
-  &= \lambda x. f ((g \circ h) \; x)
-  \\
-  &= \lambda x. f ((\lambda x. g (h \; x)) \; x)
-  \\
-  &= \lambda x. f (g (h \; x))
-\\
-  &(f \circ g) \circ h
-  \\
-  &= \lambda x. (f \circ g)(h \; x)
-  \\
-  &= \lambda x. (\lambda x. f (g \; x)) (h \; x)
-  \\
-  &= \lambda x. f (g (h \; x))
-\end{aligned}}
-
-確實滿足要求。
+\transclude{fp-000K}
+\transclude{fp-000L}
+\transclude{fp-000M}
+\transclude{fp-000N}

@@ -1,0 +1,12 @@
+\title{單射 (injection)}
+
+\p{假設我們稱一個函數 #{f:A \to B} 是單射，則 #{A} 與 #{B} 的元素關係都是一對一的，即}
+
+##{\forall a,b\in A,\ a\neq b \Longrightarrow f(a)\neq f(b)}
+
+\figure{
+  \img[src]{images/fp-000L/injection.png}
+  \figcaption{injection}
+}
+
+\p{我們可以從中得知另一個訊息是 #{A} 中的元素數量會小於等於 #{B} 元素數量，即 #{|A|\le |B|}}
