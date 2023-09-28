@@ -1,0 +1,15 @@
+\title{Monoid}
+\taxon{definition}
+\date{2023-09-13}
+\author{fizzyelt}
+
+[Monoid](https://en.wikipedia.org/wiki/Monoid) 是有 identity element 的 [semigroup](alg-0003)，其中 identity element #{e} 滿足
+
+##{
+  e \bullet a = a = a \bullet e
+}
+
+如果把 id morphism 對應到 #{e}，而剩餘的 morphism 對應到每個 monoid 的元素上，那麼只有一個 object 的 [small category](cat-0001) 正好是一個 monoid。
+
+\transclude{fp-000O}
+\transclude{cs-0001}

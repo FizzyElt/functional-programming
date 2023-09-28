@@ -1,6 +1,9 @@
 \title{帶你入門 functional programming}
 \meta{author}{false}
 
+\transclude{alg-0001}
+\transclude{alg-0003}
+\transclude{alg-0005}
 \transclude{fp-000F}
 \transclude{fp-0002}
 \transclude{fp-000J}

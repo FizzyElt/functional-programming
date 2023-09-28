@@ -1,0 +1,12 @@
+\title{Magma}
+\taxon{definition}
+\date{2023-09-13}
+\author{fizzyelt}
+
+[Magma](https://ncatlab.org/nlab/show/magma) 是代數結構的一種，由一個集合與運算子組成 #{(M,\ \bullet)}。定義為「對於在集合 #{M} 裡所有 #{a,\ b}，#{a\ \bullet \ b} 的結果也是集合 #{M} 裡的元素」
+
+##{
+ a,\ b \in M \Longrightarrow a\ \bullet\ b \in M
+}
+
+\transclude{alg-0002}
