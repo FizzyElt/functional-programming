@@ -6,11 +6,11 @@
 - immutable
 - curry
 - Lazy semantic
-- [data first, data last](./data_first_and_data_last.md)
-- [Magma](./Magma.md)
-- [Semigroup](./Semigroup.md)
-- [Monoid](./Monoid.md)
-- [Functor](./Functor.md)
+- [data first, data last](./trees/fp-0002.tree)
+- [Magma](./trees/alg-0001.tree)
+- [Semigroup](./trees/alg-0003.tree)
+- [Monoid](./trees/alg-0005.tree)
+- [Functor](./trees/fp-000F.tree)
 - Applicative
 - Monad
 
@@ -29,4 +29,40 @@ Locally watch server
 
 ```shell
 ./server.sh
+```
+
+### Contribution
+
+建立新的 tree，prefix 根據你的內容的主題更換
+
+目前現有的主題
+
+- fp (function programming)
+- alg (algebra)
+- cat (category)
+- set
+
+```bash
+forester new prefix=fp
+```
+
+基本內容，如果是修改現有的 tree 就新增 author 上去
+
+```text
+\title{XXX}
+\author{name}
+```
+
+將你的內容關聯到某個 tree 內
+
+xx-XXXX.tree
+
+```text
+\transclude{xx-XXXX}
+```
+
+提及 xx-XXXX.tree
+
+```text
+[text](xx-XXXX)
 ```
