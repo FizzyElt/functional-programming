@@ -60,3 +60,9 @@ xx-XXXX.tree
 ```text
 \transclude{xx-XXXX}
 ```
+
+提及 xx-XXXX.tree
+
+```text
+[text](xx-XXXX)
+```
