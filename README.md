@@ -37,7 +37,7 @@ Locally watch server
 
 目前現有的主題
 
-- fp (function programming)
+- fp (functional programming)
 - alg (algebra)
 - cat (category)
 - set
