@@ -1,15 +1,18 @@
 all: build
 .PHONY: all
 
-release: assets/forester.js
+release: assets/forester.js theme
 	@echo "Build forester"
 	@opam exec -- forester build --base-url https://fizzyelt.github.io/functional-programming --root fp-0001 trees/
 .PHONY: release
 
-build: assets/forester.js
+build: assets/forester.js theme
 	@echo "Build forester"
 	@opam exec -- forester build --dev --base-url https://fizzyelt.github.io/functional-programming --root fp-0001 trees/
 .PHONY: build
+
+theme:
+	mkdir theme
 
 assets/forester.js: node_modules assets
 	@echo "Build JS"
