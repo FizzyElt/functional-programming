@@ -2,7 +2,7 @@
 
 這是一個關於 Functional Programming 名詞解釋及知識點整理的地方，會包含一些情境及範例解說，目的在於消除學習 FP 過程中因不懂緣由所產生的困惑。
 
-- pure function
+- [pure function](./trees/fp-000J.tree)
 - immutable
 - curry
 - Lazy semantic
@@ -10,7 +10,7 @@
 - [Magma](./trees/alg-0001.tree)
 - [Semigroup](./trees/alg-0003.tree)
 - [Monoid](./trees/alg-0005.tree)
-- [Functor](./trees/fp-000F.tree)
+- [Functor](./trees/cat-0003.tree)
 - Applicative
 - Monad
 
