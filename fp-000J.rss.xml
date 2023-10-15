@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>純函數 (Pure function)</title><link>https://fizzyelt.github.io/functional-programming/fp-000J.xml</link> </channel></rss>
+<rss version="2.0"><channel><title>純函數 (Pure function)</title><link>https://fizzyelt.github.io/functional-programming/fp-000J.xml</link> <item><title>透過單元測試難易度辨別函式純度</title><link>https://fizzyelt.github.io/functional-programming/fp-000F.xml</link><pubDate>15 Oct 2023</pubDate></item></channel></rss>
