@@ -14,7 +14,7 @@
 - Applicative
 - Monad
 
-### Development
+## Development
 
 - forester
 - https://en.wikipedia.org/wiki/MacTeX
@@ -31,7 +31,7 @@ Locally watch server
 ./server.sh
 ```
 
-### Contribution
+## Contribution
 
 建立新的 tree，prefix 根據你的內容的主題更換
 
@@ -51,6 +51,17 @@ forester new prefix=fp
 ```text
 \title{XXX}
 \author{name}
+```
+
+如果你願意貢獻你的一些資訊可以在 `trees/person` 資料夾開一個 tree
+
+trees/person/xxxx.tree
+
+```text
+\title{XXXXX}
+\taxon{person}
+\meta{position}{Front-End Developer}
+\meta{external}{xxxxx.com}
 ```
 
 將你的內容關聯到某個 tree 內
