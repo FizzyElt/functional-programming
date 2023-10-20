@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="forest.xsl"?>
-<tree expanded="true" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>489</anchor> <rss>fp-0007.rss.xml</rss>  <addr>fp-0007</addr>  <route>fp-0007.xml</route>   <title>利用 compose</title> </frontmatter> <mainmatter>在函數 <b>data last 搭配柯里化</b> 的情況下用 <code>compose</code> 來組合函式會乾淨許多。
+<tree expanded="true" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>541</anchor> <rss>fp-0007.rss.xml</rss>  <addr>fp-0007</addr>  <route>fp-0007.xml</route>   <title>利用 compose</title> </frontmatter> <mainmatter>在函數 <b>data last 搭配柯里化</b> 的情況下用 <code>compose</code> 來組合函式會乾淨許多。
 <pre>const fn = compose(
   map((num) =&gt; num + 1),
   map((num) =&gt; num * 2)
 );
-</pre></mainmatter> <backmatter><contributions/> <context><tree expanded="false" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>490</anchor> <rss>fp-0006.rss.xml</rss>  <addr>fp-0006</addr>  <route>fp-0006.xml</route>   <title>利於函式組合</title> </frontmatter> <mainmatter><p>一般我們做函式組合通常是 <tex>f</tex> 函數的輸出對應到 <tex>g</tex> 函數的輸入。</p><tex display="block">  f = a  \to  b, \  g = b  \to  c
+</pre></mainmatter> <backmatter><contributions/> <context><tree expanded="false" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>542</anchor> <rss>fp-0006.rss.xml</rss>  <addr>fp-0006</addr>  <route>fp-0006.xml</route>   <title>利於函式組合</title> </frontmatter> <mainmatter><p>一般我們做函式組合通常是 <tex>f</tex> 函數的輸出對應到 <tex>g</tex> 函數的輸入。</p><tex display="block">  f = a  \to  b, \  g = b  \to  c
 </tex><p>  但現實是並不是每個函數的輸入參數都只有一個，我們必須先給一些參數後才能再跟其他函數接在一起。
   而一般情況下組合會是長這樣：
 </p><pre>function fn(data) {
@@ -15,7 +15,7 @@
   );
 }
 </pre>你每組一個新的函數出來你都得做一次傳遞資料的動作。
-<tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>1</crumb></trail> <anchor>491</anchor> <rss>fp-0007.rss.xml</rss>  <addr>fp-0007</addr>  <route>fp-0007.xml</route>   <title>利用 compose</title> </frontmatter> <mainmatter>在函數 <b>data last 搭配柯里化</b> 的情況下用 <code>compose</code> 來組合函式會乾淨許多。
+<tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>1</crumb></trail> <anchor>543</anchor> <rss>fp-0007.rss.xml</rss>  <addr>fp-0007</addr>  <route>fp-0007.xml</route>   <title>利用 compose</title> </frontmatter> <mainmatter>在函數 <b>data last 搭配柯里化</b> 的情況下用 <code>compose</code> 來組合函式會乾淨許多。
 <pre>const fn = compose(
   map((num) =&gt; num + 1),
   map((num) =&gt; num * 2)
