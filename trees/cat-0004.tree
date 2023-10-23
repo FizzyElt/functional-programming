@@ -1,0 +1,12 @@
+\title{cartesian closed category}
+\taxon{definition}
+\author{dannypsnl}
+\date{2023-10-24}
+
+\p{
+  一個[範疇](cat-0001) #{C} 被稱為 cartesian closed 表示
+  \ol{
+    \li{任意有限多個 objects #{\{a_i \mid i \in \mathbb{N}\}} 的 product #{a_0 \times ... \times a_n} 亦是範疇的 object}
+    \li{對所有 object #{a \in C} 而言，functor #{a \times - : C \to C} 是 #{(-)^a : C \to C} 的右伴隨}
+  }
+}
