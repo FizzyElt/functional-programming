@@ -374,11 +374,16 @@ nav#toc ul {
 
 a.external {
   text-decoration: underline;
+  color:#1d4ed8;
 }
 
 a.toc {
   box-shadow: none;
   text-decoration: none;
+}
+
+a.local{
+  color:#047857;
 }
 
 a.local,
