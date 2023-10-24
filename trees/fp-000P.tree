@@ -1,0 +1,12 @@
+\title{Functor Laws}
+\author{fizzyelt}
+
+\p{
+    Functor class 的實例通過語言的檢查，都被視為語言中的 Functor，然而因為不能施加限制的關係，這些實例並不總是範疇論中的 Functor，所以必須檢查 Functor laws 才會是範疇論中的 Functor。
+}
+
+##{
+fmap\ id = id
+\\
+fmap\ (g\circ f) = fmap\ g \circ fmap\ f
+}
