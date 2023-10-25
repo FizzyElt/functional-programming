@@ -3,7 +3,7 @@
 \author{dannypsnl}
 
 \p{
-  即便我們看了範疇論跟 FP 語言中的 Functor 定義，但在概念的銜接上仍然有困難，如果你看了 [Functor(functional programming) wiki](https://en.wikipedia.org/wiki/Functor_(functional_programming)) 會發現他是受範疇論啟發的 design pattern。而到底引用了哪些概念，以及與語言能做到什麼程度，並沒有很好的說明。
+  即便我們看了[範疇論](cat-0002)跟 FP 語言中的 Functor 定義，但在概念的銜接上仍然有困難，如果你看了 [Functor(functional programming) wiki](https://en.wikipedia.org/wiki/Functor_(functional_programming)) 會發現他是受範疇論啟發的 design pattern。而到底引用了哪些概念，以及與語言能做到什麼程度，並沒有很好的說明。
 }
 
 \p{
