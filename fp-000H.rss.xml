@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>Lean 中的定義</title><link>https://fizzyelt.github.io/functional-programming/fp-000H.xml</link> </channel></rss>
+<rss version="2.0"><channel><title>FP 的 Functor 與範疇論的 Functor 之間的關聯</title><link>https://fizzyelt.github.io/functional-programming/fp-000H.xml</link> <item><title>Functor Laws</title><link>https://fizzyelt.github.io/functional-programming/fp-000P.xml</link></item></channel></rss>
