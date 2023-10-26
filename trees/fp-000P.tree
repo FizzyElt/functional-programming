@@ -1,0 +1,12 @@
+\title{Functor Laws}
+\author{fizzyelt}
+
+\p{
+    Functor class 的實例不能視為範疇論中的 Functor，必須檢查 Functor 的約束才會是真正的 Functor。
+}
+
+##{
+fmap\ id = id
+\\
+fmap\ (g\circ f) = fmap\ g \circ fmap\ f
+}
