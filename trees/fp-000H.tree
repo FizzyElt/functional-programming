@@ -22,7 +22,7 @@
 }
 
 \p{
-  範疇論跟程式語言定義的 Functor 不是完全一樣的概念，因為大部分的語言大部分的語言並不可能寫出[命題](https://ncatlab.org/nlab/show/type+of+propositions)，所以範疇論的限制語言裡不一定有加上，這之間的一些漏洞就會產生對使用者來說可能很奇怪的結果，我們能做的就是將兩者之間重疊的部份做連結。而 Haskell 是透過 [Typeclass](https://wiki.haskell.org/Typeclassopedia) 來做約束，所以在程式語言的語境下所說的 Functor 是指 type class 的定義。另外，我們常說「Maybe 是一個 Functor」 指的是 Maybe 是 Functor class 的一個實例 (Maybe 可替換任何其他 Functor class 實例)。
+  範疇論跟程式語言定義的 Functor 不是完全一樣的概念，因為大部分的語言並不可能寫出[命題](https://ncatlab.org/nlab/show/type+of+propositions)，所以範疇論的限制語言裡不一定有加上，這之間的一些漏洞就會產生對使用者來說可能很奇怪的結果，我們能做的就是將兩者之間重疊的部份做連結。而 Haskell 是透過 [Typeclass](https://wiki.haskell.org/Typeclassopedia) 來做約束，所以在程式語言的語境下所說的 Functor 是指 type class 的定義。另外，我們常說「Maybe 是一個 Functor」 指的是 Maybe 是 Functor class 的一個實例 (Maybe 可替換任何其他 Functor class 實例)。
 }
 
 \p{
