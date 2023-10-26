@@ -7,7 +7,7 @@
 }
 
 \p{
-  如果以「Functor 是兩個範疇之間的映射」這個觀點來看程式中的 Functor 似乎有些奇怪，通常我們看到的範例都是舉兩個不同範疇 #{C,D}，如果某一程式語言是一個範疇 #{C} 的話，那範疇 #{D} 就會是另一個語言，但現實我們幾乎不會想這樣做。所以這裡唯一的可能是指「 #{C} 與 #{C} 之間的映射」，也就是 \b{Endofunctor} 。你可以在 [Haskell wiki](https://wiki.haskell.org/Typeclassopedia) 以及 fp-ts 作者所寫的 [Introduction to Functional Programming](https://github.com/enricopolanski/functional-programming#a-boundary-that-leads-to-functors) 中找到相關說明。
+  如果以「Functor 是兩個範疇之間的映射」這個觀點來看程式中的 Functor 似乎有些奇怪，通常我們看到的範例都是舉兩個不同範疇 #{C,D}，如果某一程式語言是一個範疇 #{C} 的話，那範疇 #{D} 就會是另一個語言，雖然我們常常這樣思考，但是我們定義程式裡面的 Functor 時不想弄得太複雜。所以這裡指的都是「 #{C} 與 #{C} 之間的映射」，也就是 \b{Endofunctor} 。你可以在 [Haskell wiki](https://wiki.haskell.org/Typeclassopedia) 以及 fp-ts 作者所寫的 [Introduction to Functional Programming](https://github.com/enricopolanski/functional-programming#a-boundary-that-leads-to-functors) 中找到相關說明。
 }
 
 
@@ -29,23 +29,26 @@
   其他 FP 語言雖然不一定都使用 Typeclass 這個詞，但大多 Functor 的定義都差不多。
 }
 
-\p{\b{Haskell}}
+\block{\b{Haskell}}{
 \pre{\startverb%
 class Functor f where
   fmap :: (a -> b) -> f a -> f b
 \stopverb}
+}
 
-\p{\b{Scala}}
+\block{\b{Scala}}{
 \pre{\startverb%
 trait Functor[F[_]] {
   def map[A,B](a: F[A])(f: A => B): F[B]
 }
 \stopverb}
+}
 
-\p{\b{Lean}}
+\block{\b{Lean}}{
 \pre{\startverb%
 class Functor (f : Type u → Type v) : Type (max (u+1) v) where
   map : {α β : Type u} → (α → β) → f α → f β
 \stopverb}
+}
 
 \transclude{fp-000P}
