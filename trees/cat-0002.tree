@@ -18,7 +18,7 @@
 
   \ol{
     \li{
-      for every object #{c \in Ob{\cat1}}, we have #{F(id_c) = id_{F(c)}};
+      for every object #{c \in Ob(\cat1)}, we have #{F(id_c) = id_{F(c)}};
     }
     \li{
       for every three objects #{c_1, c_2, c_3 \in Ob(\cat1)} and two morphisms #{f \in \cat1(c_1, c_2)} and #{g \in \cat1(c_2, c_3)}, the equation #{F(f \circ g) = F(f) \circ F(g)} holds in \cat2.
