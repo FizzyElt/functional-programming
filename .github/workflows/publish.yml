@@ -54,6 +54,7 @@ jobs:
             newtx
             newpx
             xstring
+            xpatch
             fontaxes
             kastrup
 
