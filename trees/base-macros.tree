@@ -1,0 +1,3 @@
+\def\br{\xml{br}{}}
+
+\def\img[src]{\xml{img}[src]{\src}{}}

@@ -2,8 +2,7 @@
 
 \p{我們稱一個函數 #{f : A \to B} 是對射，則該函數同時達成單射與滿射條件，因為同時滿足 #{|A|\le |B|} 跟 #{|A|\ge |B|} 則 #{|A| = |B|}}
 
-
-\figure{
-  \img[src]{images/fp-000N/bijection.png}
-  \figcaption{bijection}
+\xml{figure}{
+  \xml{img}[src]{images/fp-000N/bijection.png}{}
+  \xml{figcaption}{bijection}
 }

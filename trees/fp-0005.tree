@@ -18,7 +18,7 @@ function map(callback) {
 }
 \stopverb}
 
-現在做一個 double 函數只需要傳 callback 即可
+\p{現在做一個 double 函數只需要傳 callback 即可}
 
 \pre{\startverb%
 map((num) => num * 2);
