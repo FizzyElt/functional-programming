@@ -13,7 +13,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
         with:
@@ -54,9 +54,9 @@ jobs:
             newtx
             newpx
             xstring
-            xpatch
             fontaxes
             kastrup
+            spath3
 
       - name: Check `latex` version
         run: latex --version
