@@ -4,14 +4,14 @@
 \author{dannypsnl}
 \date{2023-09-13}
 
-在禁止 free variable 的 lambda calculus 中，可以將 monoid 用作模型
+\p{在禁止 free variable 的 lambda calculus 中，可以將 monoid 用作模型}
 
 \ul{
   \li{#{e} 就是 #{\lambda x. x}}
   \li{函數 #{f, g} 的組合 #{f \circ g} 是 #{\lambda x. f (g \; x)}}
 }
 
-identity law 的檢查比較容易，這裡我們就來看結合律如何運作：
+\p{identity law 的檢查比較容易，這裡我們就來看結合律如何運作：}
 
 ##{\begin{aligned}
   &f \circ (g \circ h)
@@ -31,4 +31,4 @@ identity law 的檢查比較容易，這裡我們就來看結合律如何運作�
   &= \lambda x. f (g (h \; x))
 \end{aligned}}
 
-確實滿足要求。
+\p{確實滿足要求。}

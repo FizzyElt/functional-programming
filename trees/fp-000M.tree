@@ -4,9 +4,9 @@
 
 ##{\forall b \in B,\ \exist a \in A,\ f(a) = b}
 
-\figure{
-  \img[src]{images/fp-000M/surjection.png}
-  \figcaption{surjection}
+ \xml{figure}{
+  \xml{img}[src]{images/fp-000M/surjection.png}{}
+  \xml{figcaption}{surjection}
 }
 
 \p{我們可以從中得知另一個訊息是 #{A} 中的元素數量會大於等於 #{B} 元素數量，即 #{|A| \ge |B|}}

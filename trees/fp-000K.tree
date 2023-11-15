@@ -3,7 +3,7 @@
 \author{fizzyelt}
 \author{dannypsnl}
 
-\p{在數學中，函數是一個集合 (稱為\b{定義域 domain}) 到另一個集合 (稱為\b{值域 codomain}) 的映射，假設我們有個函數 #{f:A \to B}，則 #{A} (domain) 中每個元素都必須對應到 #{B}(codomain) 中的一個元素，能達成 #{A \to B} 條件的函數總共有 #{|B|^{|A|}} 種，我們能實現的是有限的語法能實現的一小部分，而不是所有都實現。}
+\p{在數學中，函數是一個集合 (稱為\strong{定義域 domain}) 到另一個集合 (稱為\strong{值域 codomain}) 的映射，假設我們有個函數 #{f:A \to B}，則 #{A} (domain) 中每個元素都必須對應到 #{B}(codomain) 中的一個元素，能達成 #{A \to B} 條件的函數總共有 #{|B|^{|A|}} 種，我們能實現的是有限的語法能實現的一小部分，而不是所有都實現。}
 
 \p{Typescript}
 
@@ -21,7 +21,7 @@ is_even :: Int -> Bool
 is_even n = n `mod` 2 == 0
 \stopverb}
 
-\p{函數分三種類型，包含 \b{單射 (injection)}、\b{滿射 (surjection)}、\b{對射 (bijection)}。}
+\p{函數分三種類型，包含 \strong{單射 (injection)}、\strong{滿射 (surjection)}、\strong{對射 (bijection)}。}
 
 \transclude{fp-000L}
 \transclude{fp-000M}

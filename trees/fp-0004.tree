@@ -22,4 +22,4 @@ function double(data) {
 }
 \stopverb}
 
-\p{你會發現你還是要一直傳遞 \code{data} ，這到底有什麼差，但我們忘了一件事情是 FP 通常會將函數做\b{柯里化(curry)}。}
+\p{你會發現你還是要一直傳遞 \code{data} ，這到底有什麼差，但我們忘了一件事情是 FP 通常會將函數做\strong{柯里化(curry)}。}

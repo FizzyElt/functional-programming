@@ -11,12 +11,12 @@
 
 \ol{
   \li{
-    有 #{Ob(\CCat)} 物件 \b{class}，表示範疇中的物件。作為方便的記號，當 #{a} 為 #{\CCat} 中一物件，我們記成 #{a \in Ob(\CCat)}
+    有 #{Ob(\CCat)} 物件 \strong{class}，表示範疇中的物件。作為方便的記號，當 #{a} 為 #{\CCat} 中一物件，我們記成 #{a \in Ob(\CCat)}
   }
   \li{
     當有 #{a, b \in Ob(\CCat)}，而 #{f} 為一 #{a} 到 #{b} 之態射(morphism) ，記為 #{f \in \CCat(a, b)} 或是 #{f : a \to b}。
     態射可以組合，也就是說當有 #{f : a \to b} 且 #{g : b \to c}，存在一個兩個的組合態射 #{f \circ g}。
-    與上面相同，#{\CCat(a, b)} 是一個態射 \b{class}
+    與上面相同，#{\CCat(a, b)} 是一個態射 \strong{class}
   }
   \li{
     #{id_a\ id_b} 對 #{f:a\to b} 滿足 #{f\circ id_a = f} 跟 #{id_b\circ f = f}
