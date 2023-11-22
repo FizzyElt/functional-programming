@@ -1,0 +1,34 @@
+\title{#{F}-algebra}
+\taxon{definition}
+\author{dannypsnl}
+\author{fizzyelt}
+
+\p{要理解 #{F}-algebra，我們需要一些觀察，第一個是我們可以用一組簽名來概括一個代數。例如，Monoid 有一組簽名：}
+
+##{\begin{cases}
+1:1\to m \\
+\bullet: m \times m \to m
+\end{cases}}
+
+\p{或者你可以將 Ring 寫成：}
+
+##{\begin{cases}
+0: 1 \to m \\
+1:1 \to m \\
++: m \times m \to m \\
+\times: m \times m \to m \\
+- : m \to m
+\end{cases}}
+
+\p{下一步我們認定 #{m} 為範疇 #{C} 中的一個對象，這裡 #{C} 是一個 [cartesian closed category](cat-0004)。}
+
+\ul{
+\li{Monoid 是 #{C} 中的一個態射 #{1 + m \times m \to m}}
+\li{Ring 是 #{C} 中的一個態射 #{1 + 1 + m \times m + m \times m + m \to m}}
+}
+
+\p{現在我們概括了代數的定義。}
+
+\transclude{cat-0006}
+\transclude{cat-0007}
+\transclude{cat-0008}
