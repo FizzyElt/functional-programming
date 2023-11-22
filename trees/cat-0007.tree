@@ -1,0 +1,46 @@
+\title{Category of #{F}-algebra}
+\taxon{definition}
+\author{dannypsnl}
+\author{fizzyelt}
+
+\texpackage{preamble}
+
+\p{對於在一個適當的範疇 #{C} 中固定的自函子 #{F} (以下省略 #{F} 符號)}
+
+\ol{
+    \li{#{F}-algebra #{(x,\alpha)} 形成範疇對象。}
+    \li{態射皆為 #{(x,\alpha)\xrightarrow{Fm} (y,\beta)} 對象的同態，組合由函子定律給出。}
+}
+
+
+\p{一個同態為一個 #{C} 中的態射 #{m} 並使以下圖表交換。}
+
+\tex{
+  % https://q.uiver.app/#q=WzAsNCxbMCwwLCJGeCJdLFsyLDAsIkZ5Il0sWzAsMiwieCJdLFsyLDIsInkiXSxbMCwxLCJGbSJdLFsyLDMsIm0iLDJdLFswLDIsIlxcYWxwaGEiLDJdLFsxLDMsIlxcYmV0YSJdXQ==
+\begin{tikzcd}
+	Fx && Fy \\
+	\\
+	x && y
+	\arrow["Fm", from=1-1, to=1-3]
+	\arrow["m"', from=3-1, to=3-3]
+	\arrow["\alpha"', from=1-1, to=3-1]
+	\arrow["\beta", from=1-3, to=3-3]
+\end{tikzcd}
+}
+
+\p{我們可以額外確認 identity 確實運作。}
+
+\tex{
+  % https://q.uiver.app/#q=WzAsNCxbMCwwLCJGeCJdLFsyLDAsIkZ4Il0sWzAsMiwieCJdLFsyLDIsIngiXSxbMCwxLCIxX3tGeH0iXSxbMiwzLCIxX3t4fSIsMl0sWzAsMiwiXFxhbHBoYSIsMl0sWzEsMywiXFxhbHBoYSJdXQ==
+\begin{tikzcd}
+	Fx && Fx \\
+	\\
+	x && x
+	\arrow["{1_{Fx}}", from=1-1, to=1-3]
+	\arrow["{1_{x}}"', from=3-1, to=3-3]
+	\arrow["\alpha"', from=1-1, to=3-1]
+	\arrow["\alpha", from=1-3, to=3-3]
+\end{tikzcd}
+}
+
+\p{這些是跟範疇中初始對象 (initial object) 有關的一個定理}
