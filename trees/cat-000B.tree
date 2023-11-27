@@ -1,0 +1,5 @@
+\title{結論}
+\author{dannypsnl}
+\author{fizzyelt}
+
+\p{這篇主要從 Category Theory for Programmers 中學習 #{F}-algebra，並花了一些時間深思熟慮後用我們的方式表達其核心思想。這篇文章回答了一些問題，但我們總是有更多問題。什麼是單子（Monad）的代數？什麼是程式語言的代數（通常是有遞迴的語法樹）？希望你透過閱讀文章和練習也能很好地理解它。}

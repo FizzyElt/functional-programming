@@ -19,7 +19,7 @@
 \end{tikzcd}
 }
 
-\p{在 Haskell，我們有能力定義初始代數}
+\p{在 Haskell 中，我們有能力定義初始代數}
 
 \block{\strong{Haskell}}{\pre{\startverb%
 newtype Fix f = Fix (f (Fix f))
