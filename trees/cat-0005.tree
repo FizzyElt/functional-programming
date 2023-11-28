@@ -19,8 +19,8 @@
 \times: m \times m \to m \\
 - : m \to m
 \end{cases}}
-要選一個足以表示簽名的範疇，這裡是 CCC
-\p{下一步我們認定 #{m} 為範疇 #{C} 中的一個 object，要選一個足以表示簽名的範疇，這裡是 [cartesian closed category](cat-0004)。}
+
+\p{我們令 #{m} 為範疇 #{C} 中的一個 object，要選一個足以表示簽名的範疇，這裡是 [cartesian closed category](cat-0004)。}
 
 \ul{
 \li{Monoid 是 #{C} 中的一個態射 #{1 + m \times m \to m}}
