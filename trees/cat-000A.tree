@@ -4,7 +4,7 @@
 
 \texpackage{preamble}
 
-\p{作為一個對偶概念，我們可以畫出一個餘代數(coalgebra)圖。}
+\p{作為一個對偶概念，我們可以畫出一個 coalgebra 圖。}
 
 \tex{
     % https://q.uiver.app/#q=WzAsNCxbMiwwLCJGXFwgYSJdLFsyLDIsImEiXSxbMCwwLCJGXFwgdCJdLFswLDIsInQiXSxbMSwzLCJtIl0sWzEsMCwiZiIsMl0sWzAsMiwiRm0iLDJdLFszLDIsInUiXV0=
