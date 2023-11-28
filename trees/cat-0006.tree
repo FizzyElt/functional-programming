@@ -4,11 +4,10 @@
 \author{fizzyelt}
 
 
-\p{在一個適當的範疇 #{C} 中，可以描述一個 #{F(-)} 符號，以及一個自函子 #{F:C \to C}，而 #{F}-algebra 為一個三元組：}
+\p{在一個適當的範疇 #{C} 中，我們可以把簽名寫成 #{F(-)} 這個函子投射出的 #{F(m) \to m} 是 #{F}-algebra，可以記為三元組：}
 
 ##{(F,x,\alpha)}
 
 \p{其中 #{\alpha : Fx \to x} 是 #{C} 中的一個態射。}
 
-\p{根據 #{F}-algebra 的定義，我們想知道固定 #{F} 形式的 #{F}-algebra 是否形成一個範疇，答案是肯定的。}
-
+\p{functor 與 natural transformation 構成 functor category}
