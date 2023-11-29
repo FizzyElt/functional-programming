@@ -3,7 +3,7 @@
 \author{dannypsnl}
 \author{fizzyelt}
 
-\p{要理解 #{F}-algebra，我們需要一些觀察，第一個是我們可以用一組簽名來表示一個代數。例如，Monoid 有一組簽名：}
+\p{要理解 #{F}-algebra，我們需要一些觀察，第一個是代數可以表示成一組簽名。例如，Monoid 有一組簽名：}
 
 ##{\begin{cases}
 1:1\to m \\

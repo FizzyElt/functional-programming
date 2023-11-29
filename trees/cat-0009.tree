@@ -4,7 +4,7 @@
 
 \texpackage{preamble}
 
-\p{此理論實際上在證明初始代數 #{(F,i,j)} 的 #{C} 對象 #{i} 是 #{F} 的不動點。透過將 #{j} 反轉為它的逆元，我們可以得到以下交換圖}
+\p{此理論實際上在證明初始代數 #{(F,i,j)} 的 #{C} 對象 #{i} 是 #{F} 的不動點。畫出 #{j} 的 inverse 可以得出下面交換圖}
 
 \tex{
   % https://q.uiver.app/#q=WzAsNCxbMiwwLCJGYSJdLFsyLDIsImEiXSxbMCwwLCJGaSJdLFswLDIsImkiXSxbMCwxLCJhbGciXSxbMiwwLCJGbSJdLFszLDEsIm0iLDJdLFsyLDMsImoiLDJdXQ==

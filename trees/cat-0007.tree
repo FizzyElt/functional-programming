@@ -13,7 +13,7 @@
 }
 
 
-\p{一個同態為一個 #{C} 中的 #{m} 為一個使以下交換圖成立的態射。}
+\p{一個同態為一個 #{C} 中的態射 #{m} 為一個使以下交換圖成立的態射。}
 
 \tex{
   % https://q.uiver.app/#q=WzAsNCxbMCwwLCJGeCJdLFsyLDAsIkZ5Il0sWzAsMiwieCJdLFsyLDIsInkiXSxbMCwxLCJGbSJdLFsyLDMsIm0iLDJdLFswLDIsIlxcYWxwaGEiLDJdLFsxLDMsIlxcYmV0YSJdXQ==
