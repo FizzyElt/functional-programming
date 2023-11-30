@@ -5,15 +5,16 @@
 
 \texpackage{preamble}
 
+\p{functor 與 natural transformation 構成 functor category}
+
 \p{對於在一個適當的範疇 #{C} 中固定的自函子 #{F} (以下省略 #{F} 符號)}
 
 \ol{
-    \li{#{F}-algebra #{(x,\alpha)} 形成範疇 object。}
+    \li{object 是全部的 #{F}-algebra。}
     \li{態射皆為 #{(x,\alpha)\xrightarrow{Fm} (y,\beta)} 對象的同態，組合由函子定律給出。}
 }
 
-
-\p{一個同態為一個 #{C} 中的態射 #{m} 為一個使以下交換圖成立的態射。}
+\p{同態是令下圖交換的態射 #{m}}
 
 \tex{
   % https://q.uiver.app/#q=WzAsNCxbMCwwLCJGeCJdLFsyLDAsIkZ5Il0sWzAsMiwieCJdLFsyLDIsInkiXSxbMCwxLCJGbSJdLFsyLDMsIm0iLDJdLFswLDIsIlxcYWxwaGEiLDJdLFsxLDMsIlxcYmV0YSJdXQ==
@@ -28,7 +29,7 @@
 \end{tikzcd}
 }
 
-\p{我們可以額外檢查 identity 確實運作。}
+\p{額外檢查我們可以發現 identity 也如預期運作}
 
 \tex{
   % https://q.uiver.app/#q=WzAsNCxbMCwwLCJGeCJdLFsyLDAsIkZ4Il0sWzAsMiwieCJdLFsyLDIsIngiXSxbMCwxLCIxX3tGeH0iXSxbMiwzLCIxX3t4fSIsMl0sWzAsMiwiXFxhbHBoYSIsMl0sWzEsMywiXFxhbHBoYSJdXQ==

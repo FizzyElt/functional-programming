@@ -5,7 +5,7 @@
 
 \texpackage{preamble}
 
-\p{在一個初始代數（initial algebra） #{Fi \cong i}，#{(F,i,j)} 中的求值器 #{j} 是同構(isomorphism)。}
+\p{初始代數是同構態射}
 
 \block{\strong{證明}}{
 讓 #{Fi} 成為 #{F}-algebra 範疇中的初始對象，對於 #{C} 中所有對象 #{a} 產生以下交換圖

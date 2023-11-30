@@ -20,14 +20,14 @@
 - : m \to m
 \end{cases}}
 
-\p{我們令 #{m} 為範疇 #{C} 中的一個 object，要選一個足以表示簽名的範疇，這裡是 [cartesian closed category](cat-0004)。}
+\p{我們令 #{m} 為範疇 #{C} 中的一個 object，要選一個足以表示簽名的範疇，以上面的例子來說需要 [cartesian closed category](cat-0004)。}
 
 \ul{
-\li{Monoid 是 #{C} 中的一個態射 #{1 + m \times m \to m}}
-\li{環是 #{C} 中的一個態射 #{1 + 1 + m \times m + m \times m + m \to m}}
+\li{對 #{m} 來說，Monoid 是 #{C} 中的一個態射 #{1 + m \times m \to m}}
+\li{對 #{m} 來說，環是 #{C} 中的一個態射 #{1 + 1 + m \times m + m \times m + m \to m}}
 }
 
-\p{現在我們推廣了代數的定義。}
+\p{根據這些，我們把代數的定義推廣為：固定 #{F} 函子後，每個 #{F(m) \to m} 都是一個代數。}
 
 \transclude{cat-0006}
 \transclude{cat-0007}

@@ -4,7 +4,7 @@
 
 \texpackage{preamble}
 
-\p{此理論實際上在證明初始代數 #{(F,i,j)} 的 #{C} 對象 #{i} 是 #{F} 的不動點。畫出 #{j} 的 inverse 可以得出下面交換圖}
+\p{根據 Lambek's 理論可以畫出交換圖}
 
 \tex{
   % https://q.uiver.app/#q=WzAsNCxbMiwwLCJGYSJdLFsyLDIsImEiXSxbMCwwLCJGaSJdLFswLDIsImkiXSxbMCwxLCJhbGciXSxbMiwwLCJGbSJdLFszLDEsIm0iLDJdLFsyLDMsImoiLDJdXQ==
@@ -35,4 +35,4 @@ cata :: Functor f => (f a -> a) -> Fix f -> a
 cata alg = alg . fmap (cata alg) . unFix
 \stopverb}}
 
-\p{一個常見的例子是 \code{foldr}，它是對 Catamorphism 的一種便利版本。}
+\p{\code{foldr} 是一個常見的例子，它是 Catamorphism 的一種便利版本。}
