@@ -1,0 +1,11 @@
+\title{#{F}-algebra (algebra for an endofunctor)}
+\taxon{definition}
+\author{dannypsnl}
+\author{fizzyelt}
+
+
+\p{在一個適當的範疇 #{C} 中，我們把簽名改成一個 functor #{F}，這個函子投射出的 #{F(m) \to m} 是 #{F}-algebra，記為三元組：}
+
+##{(F,x,\alpha)}
+
+\p{其中 #{\alpha : Fx \to x} 是一個 #{C} 中的態射。}

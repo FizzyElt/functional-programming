@@ -1,0 +1,38 @@
+\title{Catamorphism}
+\author{dannypsnl}
+\author{fizzyelt}
+
+\texpackage{preamble}
+
+\p{根據 Lambek's 理論可以畫出交換圖}
+
+\tex{
+  % https://q.uiver.app/#q=WzAsNCxbMiwwLCJGYSJdLFsyLDIsImEiXSxbMCwwLCJGaSJdLFswLDIsImkiXSxbMCwxLCJhbGciXSxbMiwwLCJGbSJdLFszLDEsIm0iLDJdLFsyLDMsImoiLDJdXQ==
+\begin{tikzcd}
+	Fi && Fa \\
+	\\
+	i && a
+	\arrow["alg", from=1-3, to=3-3]
+	\arrow["Fm", from=1-1, to=1-3]
+	\arrow["m"', from=3-1, to=3-3]
+	\arrow["{j^{-1}}"', from=1-1, to=3-1]
+\end{tikzcd}
+}
+
+\p{在 Haskell 中，我們可以這樣定義初始代數}
+
+\block{\strong{Haskell}}{\pre{\startverb%
+newtype Fix f = Fix (f (Fix f))
+
+unFix :: Fix f -> f (Fix f)
+unFix (Fix x) = x
+\stopverb}}
+
+\p{將 #{j} 視為 \code{Fix} 建構子，#{j^{-1}} 為 \code{unFix}，再來我們可以定義 \code{m = alg . fmap m . unFix}。因為 \code{m :: Fix f -> a}，我們有了 Catamorphism 的程式定義}
+
+\block{\strong{Haskell}}{\pre{\startverb%
+cata :: Functor f => (f a -> a) -> Fix f -> a
+cata alg = alg . fmap (cata alg) . unFix
+\stopverb}}
+
+\p{\code{foldr} 是一個常見的例子，它是 Catamorphism 的一種便利版本。}
