@@ -1,5 +1,13 @@
+EXECUTABLES = forest-server forester
+K := $(foreach exec,$(EXECUTABLES),\
+        $(if $(shell which $(exec)),some string,$(error "No $(exec) in PATH")))
+
 all: build
 .PHONY: all
+
+serve:
+	@forest-server -p 1313
+.PHONY: serve
 
 release: assets/forester.js theme
 	@echo "Build forester"
@@ -22,6 +30,7 @@ node_modules:
 	npm install
 
 deps:
+	cargo install forest-server
 	brew install watch texlive
 	opam install forester
 .PHONY: deps
