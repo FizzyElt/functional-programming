@@ -10,6 +10,10 @@ on:
       - assets/**
       - Makefile
       - .github/workflows/publish.yml
+  pull:
+    branches:
+      - main
+      - forester
 
 jobs:
   deploy:
