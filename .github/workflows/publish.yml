@@ -10,7 +10,7 @@ on:
       - assets/**
       - Makefile
       - .github/workflows/publish.yml
-  pull:
+  pull_request:
     branches:
       - main
       - forester
