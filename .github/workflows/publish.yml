@@ -10,6 +10,10 @@ on:
       - assets/**
       - Makefile
       - .github/workflows/publish.yml
+  pull:
+    branches:
+      - main
+      - forester
 
 jobs:
   deploy:
@@ -54,6 +58,7 @@ jobs:
             newtx
             newpx
             xstring
+            xpatch
             fontaxes
             kastrup
             spath3
