@@ -1,12 +1,9 @@
-EXECUTABLES = forest-server forester
-K := $(foreach exec,$(EXECUTABLES),\
-        $(if $(shell which $(exec)),some string,$(error "No $(exec) in PATH")))
-
 all: build
 .PHONY: all
 
 serve:
-	@forest-server -p 1313
+	@$(if $(shell which forest-server), echo "forest-server installed", cargo install forest-server)
+	@forest watch 1313 -- "build --dev --base-url https://fizzyelt.github.io/functional-programming --root fp-0001 trees/ "
 .PHONY: serve
 
 release: assets/forester.js theme
