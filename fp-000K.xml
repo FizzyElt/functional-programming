@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="forest.xsl"?>
-<tree expanded="true" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>663</anchor> <rss>fp-000K.rss.xml</rss> <taxon>Definition</taxon> <addr>fp-000K</addr>  <route>fp-000K.xml</route>  <authors><author><link href="fizzyelt.xml" type="local">FizzyElt</link></author><author><link href="dannypsnl.xml" type="local">Lîm Tsú-thuàn</link></author> </authors> <title>函數</title> </frontmatter> <mainmatter><p>在數學中，函數是一個集合 (稱為<strong>定義域 domain</strong>) 到另一個集合 (稱為<strong>值域 codomain</strong>) 的映射，假設我們有個函數 <tex>f:A  \to  B</tex>，則 <tex>A</tex> (domain) 中每個元素都必須對應到 <tex>B</tex>(codomain) 中的一個元素，能達成 <tex>A  \to  B</tex> 條件的函數總共有 <tex>|B|^{|A|}</tex> 種，我們能實現的是有限的語法能實現的一小部分，而不是所有都實現。</p><p>Typescript</p><pre>// isEven : number -&gt; boolean
+<tree expanded="true" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>663</anchor> <rss>fp-000K.rss.xml</rss> <taxon>Definition</taxon> <addr>fp-000K</addr>  <route>fp-000K.xml</route>  <authors><author><link href="fizzyelt.xml" type="local">FizzyElt</link></author><author><link href="dannypsnl.xml" type="local">Lîm Tsú-thuàn</link></author> </authors> <title>函數</title> </frontmatter> <mainmatter><p>在數學中，函數是一個集合 (稱為<strong>定義域 domain</strong>) 到另一個集合 (稱為<strong>值域 codomain</strong>) 的映射，假設我們有個函數 <tex>f:A  \to  B</tex>，則 <tex>A</tex> (domain) 中每個元素都必須對應到 <tex>B</tex>(codomain) 中的一個元素，能達成 <tex>A  \to  B</tex> 條件的函數總共有 <tex>|B|^{|A|}</tex> 種，我們能實現的是有限的語法能實現的一小部分，而不是所有都實現。</p><p>Typescript</p><pre>
+// isEven : number -&gt; boolean
 function isEven(num: number): boolean {
-    return num }
+    return num % 2 === 0
+}
 </pre><p>Haskell</p><pre>is_even :: Int -&gt; Bool
 is_even n = n `mod` 2 == 0
 </pre><p>函數分三種類型，包含 <strong>單射 (injection)</strong>、<strong>滿射 (surjection)</strong>、<strong>對射 (bijection)</strong>。</p><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>1</crumb></trail> <anchor>664</anchor> <rss>fp-000L.rss.xml</rss>  <addr>fp-000L</addr>  <route>fp-000L.xml</route>   <title>單射 (injection)</title> </frontmatter> <mainmatter><p>假設我們稱一個函數 <tex>f:A  \to  B</tex> 是單射，則 <tex>A</tex> 與 <tex>B</tex> 的元素關係都是一對一的，即</p><tex display="block">\forall  a,b \in  A, \  a \neq  b  \Longrightarrow  f(a) \neq  f(b)</tex><figure>
