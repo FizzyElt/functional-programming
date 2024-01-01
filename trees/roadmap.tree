@@ -1,0 +1,42 @@
+\title{地圖}
+\meta{author}{false}
+
+\p{此地圖為一大方向，每個主體內會有延伸，包含實例、名詞解釋等等，類似於心智圖，而未來也有可能異動}
+
+\ol{
+    \li{lambda calculus}
+    \li{用 recursion 解釋可計算性}
+    \li{加上 simply type}
+    \li{解釋型別規則}
+    \li{建立 STLC categorical semantic}
+    \li{加上 polymorphism}
+    \li{解釋型別規則}
+    \li{建立 #{E \to B} categorical semantic}
+    \li{解釋 #{\lambda 2} 的 polymorphic property}
+    \li{解釋 recursive type}
+    \li{連結 F-algebra}
+    \li{變成 dependent type}
+    \li{解釋型別規則}
+    \li{解釋模型（The natural model）
+        \ul{
+            \li{topos}
+            \li{topos fundamental theorem}
+            \li{presheaf}
+            \li{representable natural transformation}
+        }
+    }
+    \li{進入真正的應用}
+    \li{side effect}
+    \li{concurrency}
+    \li{安全性
+
+        \ul{
+            \li{記憶體安全與子結構類型}
+                \ul{
+                    \li{(?) proof nets}
+                }
+            \li{整體安全性不是只關乎記憶體}
+        }
+    }
+    \li{domain language}
+} 
