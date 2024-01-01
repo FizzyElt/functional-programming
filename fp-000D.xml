@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="forest.xsl"?>
-<tree expanded="true" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>600</anchor> <rss>fp-000D.rss.xml</rss>  <addr>fp-000D</addr>  <route>fp-000D.xml</route>   <title>Flip</title> </frontmatter> <mainmatter><p>flip 函數可以將你的函數的前兩個參數對調</p><pre>flow(
+<tree expanded="true" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>607</anchor> <rss>fp-000D.rss.xml</rss>  <addr>fp-000D</addr>  <route>fp-000D.xml</route>   <title>Flip</title> </frontmatter> <mainmatter><p>flip 函數可以將你的函數的前兩個參數對調</p><pre>flow(
   // ...
   flip(concat)(arr) // 將參數對調
 );
-</pre><link href="https://ramdajs.com/docs/#flip" type="external">Ramda <code>flip</code></link></mainmatter> <backmatter><contributions/> <context><tree expanded="false" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>601</anchor> <rss>fp-000B.rss.xml</rss>  <addr>fp-000B</addr>  <route>fp-000B.xml</route>   <title>參數的順序會影響結果的函數</title> </frontmatter> <mainmatter><p>有些函數的參數資料格式相同，並且擺放順序不同會影響執行結果。</p><ul><li><code>&lt;</code> lessThan</li>
+</pre><link href="https://ramdajs.com/docs/#flip" type="external">Ramda <code>flip</code></link></mainmatter> <backmatter><contributions/> <context><tree expanded="false" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>608</anchor> <rss>fp-000B.rss.xml</rss>  <addr>fp-000B</addr>  <route>fp-000B.xml</route>   <title>參數的順序會影響結果的函數</title> </frontmatter> <mainmatter><p>有些函數的參數資料格式相同，並且擺放順序不同會影響執行結果。</p><ul><li><code>&lt;</code> lessThan</li>
   <li><code>&lt;=</code> lessThanEqual</li>
   <li><code>&gt;</code> greaterThan</li>
   <li><code>&gt;=</code> greaterThanEqual</li>
@@ -15,11 +15,11 @@
   // ...
   concat(arr) // 前一個的結果會被接在 arr 後面
 );
-</pre><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>1</crumb></trail> <anchor>602</anchor> <rss>fp-000C.rss.xml</rss>  <addr>fp-000C</addr>  <route>fp-000C.xml</route>   <title>重新包裝</title> </frontmatter> <mainmatter><p>一種辦法是我們再包裝一個函數，重新將 data 擺在正確位置</p><pre>flow(
+</pre><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>1</crumb></trail> <anchor>609</anchor> <rss>fp-000C.rss.xml</rss>  <addr>fp-000C</addr>  <route>fp-000C.xml</route>   <title>重新包裝</title> </frontmatter> <mainmatter><p>一種辦法是我們再包裝一個函數，重新將 data 擺在正確位置</p><pre>flow(
   // ...
   (data) =&gt; concat(data, arr) // 多包一層來擺放正確位置
 );
-</pre></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>3</crumb></trail> <anchor>603</anchor> <rss>fp-000E.rss.xml</rss>  <addr>fp-000E</addr>  <route>fp-000E.xml</route>   <title>Placeholder</title> </frontmatter> <mainmatter><p>也可以利用 placeholder function 來消除不必要的包裝跟邏輯反轉。</p><pre>flow(
+</pre></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>3</crumb></trail> <anchor>610</anchor> <rss>fp-000E.rss.xml</rss>  <addr>fp-000E</addr>  <route>fp-000E.xml</route>   <title>Placeholder</title> </frontmatter> <mainmatter><p>也可以利用 placeholder function 來消除不必要的包裝跟邏輯反轉。</p><pre>flow(
   // ...
   R.concat(R.__, arr) // 保留第一個位置給後續進來的資料
 );
