@@ -7,12 +7,12 @@
 
 \p{Typescript}
 
-\pre{\startverb%
+\pre{
 // isEven : number -> boolean
 function isEven(num: number): boolean {
-    return num % 2 === 0
+    return num \% 2 === 0
 }
-\stopverb}
+}
 
 \p{Haskell}
 
