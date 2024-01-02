@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="forest.xsl"?>
-<tree expanded="true" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>725</anchor> <rss>set-0001.rss.xml</rss>  <addr>set-0001</addr>  <route>set-0001.xml</route> <date><year>2023</year> <month>9</month> <day>9</day></date> <authors><author><link href="dannypsnl.xml" type="local">Lîm Tsú-thuàn</link></author> </authors> <title>本性類與良性類</title> </frontmatter> <mainmatter><p>
+<tree expanded="true" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>686</anchor> <rss>set-0001.rss.xml</rss>  <addr>set-0001</addr>  <route>set-0001.xml</route> <date><year>2023</year> <month>9</month> <day>9</day></date> <authors><author><link href="dannypsnl.xml" type="local">Lîm Tsú-thuàn</link></author> </authors> <title>本性類與良性類</title> </frontmatter> <mainmatter><p>
   類區分為兩種：一種是可以順利進行類運算的「良性類」，我們把這種「良性類」稱為集合；另一種是要限制運算的「本性類」，對於本性類，類運算並不是都能進行的。
   更多資料可以參照數學導論
-</p></mainmatter> <backmatter><contributions/> <context/> <related/> <backlinks><tree expanded="false" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>726</anchor> <rss>cat-0001.rss.xml</rss> <taxon>Definition</taxon> <addr>cat-0001</addr>  <route>cat-0001.xml</route> <date><year>2023</year> <month>9</month> <day>9</day></date> <authors><author><link href="dannypsnl.xml" type="local">Lîm Tsú-thuàn</link></author> </authors> <title>直覺 Category</title> </frontmatter> <mainmatter><p>
+</p></mainmatter> <backmatter><contributions/> <context/> <related/> <backlinks><tree expanded="false" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>687</anchor> <rss>cat-0001.rss.xml</rss> <taxon>Definition</taxon> <addr>cat-0001</addr>  <route>cat-0001.xml</route> <date><year>2023</year> <month>9</month> <day>9</day></date> <authors><author><link href="dannypsnl.xml" type="local">Lîm Tsú-thuàn</link></author> </authors> <title>直覺 Category</title> </frontmatter> <mainmatter><p>
 說直覺是因為我們這裡未有完善定義何謂 <link href="set-0001.xml" type="local" title="本性類與良性類">class</link> 跟 <link href="set-0001.xml" type="local" title="本性類與良性類">set</link>，但是作為入門或是簡要使用的定義「夠好」。
 我們說 <tex>\mathcal {C}</tex> 是一個範疇的意思是：
 

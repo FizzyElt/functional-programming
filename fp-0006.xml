@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="forest.xsl"?>
-<tree expanded="true" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>556</anchor> <rss>fp-0006.rss.xml</rss>  <addr>fp-0006</addr>  <route>fp-0006.xml</route>   <title>利於函式組合</title> </frontmatter> <mainmatter><p>一般我們做函式組合通常是 <tex>f</tex> 函數的輸出對應到 <tex>g</tex> 函數的輸入。</p><tex display="block">
+<tree expanded="true" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>549</anchor> <rss>fp-0006.rss.xml</rss>  <addr>fp-0006</addr>  <route>fp-0006.xml</route>   <title>利於函式組合</title> </frontmatter> <mainmatter><p>一般我們做函式組合通常是 <tex>f</tex> 函數的輸出對應到 <tex>g</tex> 函數的輸入。</p><tex display="block">
   f = a  \to  b, \  g = b  \to  c
 </tex><p>
   但現實是並不是每個函數的輸入參數都只有一個，我們必須先給一些參數後才能再跟其他函數接在一起。
@@ -11,13 +11,13 @@
     (num) =&gt; num + 1
   );
 }
-</pre><p>你每組一個新的函數出來你都得做一次傳遞資料的動作。</p><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>1</crumb></trail> <anchor>557</anchor> <rss>fp-0007.rss.xml</rss>  <addr>fp-0007</addr>  <route>fp-0007.xml</route>   <title>利用 compose</title> </frontmatter> <mainmatter><p>在函數 <strong>data last 搭配柯里化</strong> 的情況下用 <code>compose</code> 來組合函式會乾淨許多。</p><pre>const fn = compose(
+</pre><p>你每組一個新的函數出來你都得做一次傳遞資料的動作。</p><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>1</crumb></trail> <anchor>550</anchor> <rss>fp-0007.rss.xml</rss>  <addr>fp-0007</addr>  <route>fp-0007.xml</route>   <title>利用 compose</title> </frontmatter> <mainmatter><p>在函數 <strong>data last 搭配柯里化</strong> 的情況下用 <code>compose</code> 來組合函式會乾淨許多。</p><pre>const fn = compose(
   map((num) =&gt; num + 1),
   map((num) =&gt; num * 2)
 );
-</pre></mainmatter> </tree></mainmatter> <backmatter><contributions/> <context><tree expanded="false" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>558</anchor> <rss>fp-0002.rss.xml</rss>  <addr>fp-0002</addr>  <route>fp-0002.xml</route> <date><year>2023</year> <month>9</month> <day>9</day></date> <authors><author><link href="fizzyelt.xml" type="local">FizzyElt</link></author> </authors> <title>Data first or Data last?</title> </frontmatter> <mainmatter><p>
+</pre></mainmatter> </tree></mainmatter> <backmatter><contributions/> <context><tree expanded="false" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>551</anchor> <rss>fp-0002.rss.xml</rss>  <addr>fp-0002</addr>  <route>fp-0002.xml</route> <date><year>2023</year> <month>9</month> <day>9</day></date> <authors><author><link href="fizzyelt.xml" type="local">FizzyElt</link></author> </authors> <title>Data first or Data last?</title> </frontmatter> <mainmatter><p>
   data first 跟 data last 區別在於主要被操作的資料是擺在最前面或最後面，而 functional programming 習慣 data last 的方式設計函數，目的是提高函數的可組合性。
-</p><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>2</crumb></trail> <anchor>559</anchor> <rss>fp-0003.rss.xml</rss>  <addr>fp-0003</addr>  <route>fp-0003.xml</route>   <title>一般函數的設計</title> </frontmatter> <mainmatter><p>
+</p><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>2</crumb></trail> <anchor>552</anchor> <rss>fp-0003.rss.xml</rss>  <addr>fp-0003</addr>  <route>fp-0003.xml</route>   <title>一般函數的設計</title> </frontmatter> <mainmatter><p>
   在一般情況下我們撰寫一個函數習慣將資料擺在最前面，其他參數擺後面。假設今天我們設計一個 Array <code>map</code> 函數：
 </p><pre>function map(data, callback){
   let res = [];
@@ -31,7 +31,7 @@
 </pre><p>我們可以利用 <code>map</code> 它再做出新的函數 <code>double</code>：</p><pre>function double(data) {
   return map(data, (num) =&gt; num * 2);
 }
-</pre><p>但你慢慢就會發現你每利用 <code>map</code> 做一個新的函數出來，你都要重複做一次傳遞 <code>data</code> 的動作。</p></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>3</crumb></trail> <anchor>560</anchor> <rss>fp-0004.rss.xml</rss>  <addr>fp-0004</addr>  <route>fp-0004.xml</route>   <title>Data last</title> </frontmatter> <mainmatter><p>今天我們轉成 data last 形式來設計 <code>map</code>：</p><pre>function map(callback, data) {
+</pre><p>但你慢慢就會發現你每利用 <code>map</code> 做一個新的函數出來，你都要重複做一次傳遞 <code>data</code> 的動作。</p></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>3</crumb></trail> <anchor>553</anchor> <rss>fp-0004.rss.xml</rss>  <addr>fp-0004</addr>  <route>fp-0004.xml</route>   <title>Data last</title> </frontmatter> <mainmatter><p>今天我們轉成 data last 形式來設計 <code>map</code>：</p><pre>function map(callback, data) {
   let res = [];
 
   for (const item of data) {
@@ -43,7 +43,7 @@
 </pre><p>我們再嘗試做一個 <code>double</code>：</p><pre>function double(data) {
   return map((num) =&gt; num * 2, data);
 }
-</pre><p>你會發現你還是要一直傳遞 <code>data</code> ，這到底有什麼差，但我們忘了一件事情是 FP 通常會將函數做<strong>柯里化(curry)</strong>。</p></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>4</crumb></trail> <anchor>561</anchor> <rss>fp-0005.rss.xml</rss>  <addr>fp-0005</addr>  <route>fp-0005.xml</route>   <title>Data last 搭配柯里化</title> </frontmatter> <mainmatter><p>
+</pre><p>你會發現你還是要一直傳遞 <code>data</code> ，這到底有什麼差，但我們忘了一件事情是 FP 通常會將函數做<strong>柯里化(curry)</strong>。</p></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>4</crumb></trail> <anchor>554</anchor> <rss>fp-0005.rss.xml</rss>  <addr>fp-0005</addr>  <route>fp-0005.xml</route>   <title>Data last 搭配柯里化</title> </frontmatter> <mainmatter><p>
 我們將 <code>map</code> 函數做柯里化
 </p><pre>function map(callback) {
   return function (data) {
@@ -57,8 +57,8 @@
   };
 }
 </pre><p>現在做一個 double 函數只需要傳 callback 即可</p><pre>map((num) =&gt; num * 2);
-</pre></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>6</crumb></trail> <anchor>562</anchor> <rss>fp-0008.rss.xml</rss>  <addr>fp-0008</addr>  <route>fp-0008.xml</route>   <title>Data first 較優雅的作法</title> </frontmatter> <mainmatter><p>如果不想像一開始那樣一直傳遞 data，但還是想走 data first 形式，有兩種</p><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>6</crumb> <crumb>1</crumb></trail> <anchor>563</anchor> <rss>fp-0009.rss.xml</rss>  <addr>fp-0009</addr>  <route>fp-0009.xml</route>   <title>Chaining</title> </frontmatter> <mainmatter><p>一種是就是用我們一般 Array methods 的形式串接下去</p><pre>data.map((num) =&gt; num * 2).map((num) =&gt; num + 1);
-</pre><p>可以從 <link href="https://lodash.com/docs/#chain" type="external">lodash</link> 找到這種設計方式，但伴隨的缺點是跟其他函式庫沒辦法配合的這麼好。</p></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>6</crumb> <crumb>2</crumb></trail> <anchor>564</anchor> <rss>fp-000A.rss.xml</rss>  <addr>fp-000A</addr>  <route>fp-000A.xml</route>   <title>略過參數的語法糖</title> </frontmatter> <mainmatter><p>在 Scala 中可以利用 <code>_</code> 來暫時略過參數：</p><pre>List(1, 2, 3, 4).map(_ * 2)
+</pre></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>6</crumb></trail> <anchor>555</anchor> <rss>fp-0008.rss.xml</rss>  <addr>fp-0008</addr>  <route>fp-0008.xml</route>   <title>Data first 較優雅的作法</title> </frontmatter> <mainmatter><p>如果不想像一開始那樣一直傳遞 data，但還是想走 data first 形式，有兩種</p><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>6</crumb> <crumb>1</crumb></trail> <anchor>556</anchor> <rss>fp-0009.rss.xml</rss>  <addr>fp-0009</addr>  <route>fp-0009.xml</route>   <title>Chaining</title> </frontmatter> <mainmatter><p>一種是就是用我們一般 Array methods 的形式串接下去</p><pre>data.map((num) =&gt; num * 2).map((num) =&gt; num + 1);
+</pre><p>可以從 <link href="https://lodash.com/docs/#chain" type="external">lodash</link> 找到這種設計方式，但伴隨的缺點是跟其他函式庫沒辦法配合的這麼好。</p></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>6</crumb> <crumb>2</crumb></trail> <anchor>557</anchor> <rss>fp-000A.rss.xml</rss>  <addr>fp-000A</addr>  <route>fp-000A.xml</route>   <title>略過參數的語法糖</title> </frontmatter> <mainmatter><p>在 Scala 中可以利用 <code>_</code> 來暫時略過參數：</p><pre>List(1, 2, 3, 4).map(_ * 2)
 </pre><pre>def multiplier(a: Int, b: Int): Int = a * b
 
 val fourTimes = multiplier(_: Int, 4)
@@ -72,7 +72,7 @@ fourTimes(2) // 8
   map(R.__, (num) =&gt; num + 1),
   map(R.__, (num) =&gt; num * 2)
 );
-</pre></mainmatter> </tree></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>7</crumb></trail> <anchor>565</anchor> <rss>fp-000B.rss.xml</rss>  <addr>fp-000B</addr>  <route>fp-000B.xml</route>   <title>參數的順序會影響結果的函數</title> </frontmatter> <mainmatter><p>有些函數的參數資料格式相同，並且擺放順序不同會影響執行結果。</p><ul><li><code>&lt;</code> lessThan</li>
+</pre></mainmatter> </tree></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>7</crumb></trail> <anchor>558</anchor> <rss>fp-000B.rss.xml</rss>  <addr>fp-000B</addr>  <route>fp-000B.xml</route>   <title>參數的順序會影響結果的函數</title> </frontmatter> <mainmatter><p>有些函數的參數資料格式相同，並且擺放順序不同會影響執行結果。</p><ul><li><code>&lt;</code> lessThan</li>
   <li><code>&lt;=</code> lessThanEqual</li>
   <li><code>&gt;</code> greaterThan</li>
   <li><code>&gt;=</code> greaterThanEqual</li>
@@ -83,15 +83,15 @@ fourTimes(2) // 8
   // ...
   concat(arr) // 前一個的結果會被接在 arr 後面
 );
-</pre><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>7</crumb> <crumb>1</crumb></trail> <anchor>566</anchor> <rss>fp-000C.rss.xml</rss>  <addr>fp-000C</addr>  <route>fp-000C.xml</route>   <title>重新包裝</title> </frontmatter> <mainmatter><p>一種辦法是我們再包裝一個函數，重新將 data 擺在正確位置</p><pre>flow(
+</pre><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>7</crumb> <crumb>1</crumb></trail> <anchor>559</anchor> <rss>fp-000C.rss.xml</rss>  <addr>fp-000C</addr>  <route>fp-000C.xml</route>   <title>重新包裝</title> </frontmatter> <mainmatter><p>一種辦法是我們再包裝一個函數，重新將 data 擺在正確位置</p><pre>flow(
   // ...
   (data) =&gt; concat(data, arr) // 多包一層來擺放正確位置
 );
-</pre></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>7</crumb> <crumb>2</crumb></trail> <anchor>567</anchor> <rss>fp-000D.rss.xml</rss>  <addr>fp-000D</addr>  <route>fp-000D.xml</route>   <title>Flip</title> </frontmatter> <mainmatter><p>flip 函數可以將你的函數的前兩個參數對調</p><pre>flow(
+</pre></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>7</crumb> <crumb>2</crumb></trail> <anchor>560</anchor> <rss>fp-000D.rss.xml</rss>  <addr>fp-000D</addr>  <route>fp-000D.xml</route>   <title>Flip</title> </frontmatter> <mainmatter><p>flip 函數可以將你的函數的前兩個參數對調</p><pre>flow(
   // ...
   flip(concat)(arr) // 將參數對調
 );
-</pre><link href="https://ramdajs.com/docs/#flip" type="external">Ramda <code>flip</code></link></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>7</crumb> <crumb>3</crumb></trail> <anchor>568</anchor> <rss>fp-000E.rss.xml</rss>  <addr>fp-000E</addr>  <route>fp-000E.xml</route>   <title>Placeholder</title> </frontmatter> <mainmatter><p>也可以利用 placeholder function 來消除不必要的包裝跟邏輯反轉。</p><pre>flow(
+</pre><link href="https://ramdajs.com/docs/#flip" type="external">Ramda <code>flip</code></link></mainmatter> </tree><tree expanded="true" show-heading="true" show-metadata="false" toc="true" root="false"><frontmatter><trail><crumb>7</crumb> <crumb>3</crumb></trail> <anchor>561</anchor> <rss>fp-000E.rss.xml</rss>  <addr>fp-000E</addr>  <route>fp-000E.xml</route>   <title>Placeholder</title> </frontmatter> <mainmatter><p>也可以利用 placeholder function 來消除不必要的包裝跟邏輯反轉。</p><pre>flow(
   // ...
   R.concat(R.__, arr) // 保留第一個位置給後續進來的資料
 );
