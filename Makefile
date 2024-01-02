@@ -2,7 +2,7 @@ all: build
 .PHONY: all
 
 serve:
-	@$(if $(shell which forest-server), echo "forest-server installed", cargo install forest-server)
+	@$(if $(shell which forest), echo "forest-server installed", cargo install forest-server)
 	@forest watch 1313 -- "build --dev --base-url https://fizzyelt.github.io/functional-programming --root fp-0001 trees/ "
 .PHONY: serve
 
