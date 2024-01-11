@@ -18,10 +18,4 @@
 
 \p{這個網站的準則，是教導抽象的數學概念，讓學習者最終對實際 functional programming 有一定的了解，並大致理解現代語義學研究，或許能夠應用其成果。那麼，我們開始回顧 lambda calculus 與可計算性的沿革，開始學習 functional programming 吧}
 
-\transclude{alg-0001}
-\transclude{alg-0003}
-\transclude{alg-0005}
-\transclude{cat-0003}
-\transclude{fp-0002}
-\transclude{fp-000J}
-\transclude{cat-0001}
+\transclude{roadmap}
