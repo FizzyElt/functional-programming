@@ -3,15 +3,13 @@
 \author{dannypsnl}
 \author{fizzyelt}
 
-\texpackage{preamble}
-
 \p{初始代數是同構態射}
 
 \block{\strong{證明}}{
 讓 #{Fi} 成為 #{F}-algebra 範疇中的初始對象，對於 #{C} 中所有對象 #{a} 產生以下交換圖
 }
 
-\tex{
+\tex{\usepackage{preamble}}{
   % https://q.uiver.app/#q=WzAsNCxbMCwwLCJGaSJdLFsyLDAsIkZhIl0sWzAsMiwiaSJdLFsyLDIsImEiXSxbMCwxLCJGbSJdLFsyLDMsIm0iLDJdLFswLDIsImoiLDJdLFsxLDMsImYiXV0=
 \begin{tikzcd}
 	Fi && Fa \\
@@ -26,7 +24,7 @@
 
 \p{現在我們將 #{a} 替換成 #{Fi}}
 
-\tex{
+\tex{\usepackage{preamble}}{
   % https://q.uiver.app/#q=WzAsNCxbMCwwLCJGaSJdLFsyLDAsIkZcXCBGaSJdLFswLDIsImkiXSxbMiwyLCJGaSJdLFswLDEsIkZtIl0sWzIsMywibSIsMl0sWzAsMiwiaiIsMl0sWzEsMywiRmoiXV0=
 \begin{tikzcd}
 	Fi && {F\ Fi} \\
@@ -41,7 +39,7 @@
 
 \p{再來透過複製路徑 #{Fi \to i} 得出以下交換圖}
 
-\tex{
+\tex{\usepackage{preamble}}{
   % https://q.uiver.app/#q=WzAsNSxbMCwwLCJGXFwgRmkiXSxbMiwwLCJGaSJdLFswLDIsIkZpIl0sWzIsMiwiaSJdLFswLDFdLFswLDEsIkZqIl0sWzIsMywiaiIsMl0sWzAsMiwiRmoiLDJdLFsxLDMsImoiXV0=
 \begin{tikzcd}
 	{F\ Fi} && Fi \\
@@ -56,7 +54,7 @@
 
 \p{將兩張交換圖合併}
 
-\tex{
+\tex{\usepackage{preamble}}{
   % https://q.uiver.app/#q=WzAsNixbMiwwLCJGXFwgRmkiXSxbNCwwLCJGaSJdLFsyLDIsIkZpIl0sWzQsMiwiaSJdLFswLDAsIkZpIl0sWzAsMiwiaSJdLFswLDEsIkZqIl0sWzIsMywiaiIsMl0sWzAsMiwiRmoiLDJdLFsxLDMsImoiXSxbNCwwLCJGbSJdLFs1LDIsIm0iLDJdLFs0LDUsImoiLDJdXQ==
 \begin{tikzcd}
 	Fi && {F\ Fi} && Fi \\

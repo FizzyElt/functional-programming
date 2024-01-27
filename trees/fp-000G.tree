@@ -2,14 +2,12 @@
 \author{fizzyelt}
 \author{dannypsnl}
 
-\texpackage{preamble}
-
 \p{
 	可以將一個 pure function 應用到容器型別之中。
 	單純從容器的角度來看，就像是隱藏了「取出 → 運算 → 放回去」的過程，而根據每個容器用途不同在過程中執行不同操作及判斷。
 }
 
-\tex{
+\tex{\usepackage{preamble}}{
   % http://quiver.localhost/?q=WzAsNCxbMCwxLCJGXFw7YSJdLFszLDEsIkZcXDtiIl0sWzEsMCwiYSJdLFsyLDAsImIiXSxbMCwxXSxbMiwzXSxbNSw0LCJcXGJvbGR7bGlmdH0iLDAseyJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV1d
 \begin{tikzcd}
 	& a & b \\

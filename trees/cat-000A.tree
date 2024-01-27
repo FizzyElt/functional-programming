@@ -2,11 +2,9 @@
 \author{dannypsnl}
 \author{fizzyelt}
 
-\texpackage{preamble}
-
 \p{作為一個對偶概念，可以畫出一個 coalgebra 的圖，我們稱這種關係為 anamorphism。}
 
-\tex{
+\tex{\usepackage{preamble}}{
     % https://q.uiver.app/#q=WzAsNCxbMiwwLCJGXFwgYSJdLFsyLDIsImEiXSxbMCwwLCJGXFwgdCJdLFswLDIsInQiXSxbMSwzLCJtIl0sWzEsMCwiZiIsMl0sWzAsMiwiRm0iLDJdLFszLDIsInUiXV0=
 \begin{tikzcd}
 	{F\ t} && {F\ a} \\

@@ -2,11 +2,9 @@
 \author{dannypsnl}
 \author{fizzyelt}
 
-\texpackage{preamble}
-
 \p{根據 Lambek's 理論可以畫出交換圖}
 
-\tex{
+\tex{\usepackage{preamble}}{
   % https://q.uiver.app/#q=WzAsNCxbMiwwLCJGYSJdLFsyLDIsImEiXSxbMCwwLCJGaSJdLFswLDIsImkiXSxbMCwxLCJhbGciXSxbMiwwLCJGbSJdLFszLDEsIm0iLDJdLFsyLDMsImoiLDJdXQ==
 \begin{tikzcd}
 	Fi && Fa \\
