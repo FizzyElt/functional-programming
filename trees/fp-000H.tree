@@ -29,14 +29,16 @@
   其他 FP 語言雖然不一定都使用 Typeclass 這個詞，但大多 Functor 的定義都差不多。
 }
 
-\block{\strong{Haskell}}{
+\subtree{
+\title{haskell}
 \pre{\startverb%
 class Functor f where
   fmap :: (a -> b) -> f a -> f b
 \stopverb}
 }
 
-\block{\strong{Scala}}{
+\subtree{
+\title{haskell}
 \pre{\startverb%
 trait Functor[F[_]] {
   def map[A,B](a: F[A])(f: A => B): F[B]
@@ -44,7 +46,8 @@ trait Functor[F[_]] {
 \stopverb}
 }
 
-\block{\strong{Lean}}{
+\subtree{
+\title{lean}
 \pre{\startverb%
 class Functor (f : Type u → Type v) : Type (max (u+1) v) where
   map : {α β : Type u} → (α → β) → f α → f β

@@ -19,7 +19,8 @@
 
 \p{在 Haskell 中，我們可以這樣定義初始代數}
 
-\block{\strong{Haskell}}{\pre{\startverb%
+\subtree{
+\pre{\startverb%
 newtype Fix f = Fix (f (Fix f))
 
 unFix :: Fix f -> f (Fix f)
@@ -28,7 +29,8 @@ unFix (Fix x) = x
 
 \p{將 #{j} 視為 \code{Fix} 建構子，#{j^{-1}} 為 \code{unFix}，再來我們可以定義 \code{m = alg . fmap m . unFix}。因為 \code{m :: Fix f -> a}，我們有了 Catamorphism 的程式定義}
 
-\block{\strong{Haskell}}{\pre{\startverb%
+\subtree{
+\pre{\startverb%
 cata :: Functor f => (f a -> a) -> Fix f -> a
 cata alg = alg . fmap (cata alg) . unFix
 \stopverb}}
