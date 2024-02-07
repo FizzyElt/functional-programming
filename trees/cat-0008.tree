@@ -2,10 +2,11 @@
 \taxon{theorem}
 \author{dannypsnl}
 \author{fizzyelt}
+\import{base-macros}
 
 \p{初始代數是同構態射}
 
-\block{\strong{證明}}{
+\proof{
 讓 #{Fi} 成為 #{F}-algebra 範疇中的初始對象，對於 #{C} 中所有對象 #{a} 產生以下交換圖
 }
 

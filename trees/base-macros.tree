@@ -1,3 +1,13 @@
 \def\br{\xml{br}{}}
 
 \def\img[src]{\xml{img}[src]{\src}{}}
+
+\def\proof[body]{
+ \scope{
+   \put\transclude/toc{false}
+   \subtree{
+     \taxon{proof}
+     \body
+   }
+ }
+}
